@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+<title>BW Construction | Remodeler &amp; General Contractor (Boulder, CO)</title>
+
+<meta charset="utf-8">
+<meta name="description" content="Remodeler and General Contractor.">
+<meta name="author" content="BW Construction">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Merriweather:300,400,700|Bree+Serif" type="text/css">
+
+<link rel="stylesheet" href="stylesheets/normalize.css" type="text/css">
+<link rel="stylesheet" href="stylesheets/skeleton.css" type="text/css">
+<link rel="stylesheet" href="stylesheets/layout.css" type="text/css">
+<link rel="stylesheet" href="stylesheets/application.css" type="text/css">
+
+<link rel="shortcut icon" href="images/favicon.ico">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+</head>
+
+<body>
+
+<div class="container">
+  <div class="sixteen columns">
+    <%= render '_navigation.html.erb' %>
+
+    <%= yield %>
+
+    <%= render '_footer.html.erb' %>
+  </div>
+</div>
+
+</body>
+</html>
