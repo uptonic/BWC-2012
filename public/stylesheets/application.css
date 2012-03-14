@@ -7,7 +7,33 @@ h1 {
   font-family: 'Bree Serif', serif;
   font-weight: 400; }
 
+blockquote {
+  margin-left: 0; }
+
+figure {
+  width: 100%;
+  background-color: black;
+  height: 400px; }
+
+nav ul, aside ul, footer ul {
+  padding: 0;
+  float: left; }
+  nav ul li, aside ul li, footer ul li {
+    float: left;
+    margin-right: 15px; }
+
+aside h2 {
+  margin-top: 0; }
+aside ul {
+  padding-left: 1.0em; }
+
 footer {
   border-top: 1px solid #000;
   padding-top: 1.0em;
-  margin-top: 1.0em; }
+  margin-top: 1.0em;
+  text-align: center; }
+
+footer ul {
+  list-style: none; }
+  footer ul li {
+    margin-right: 30px; }
