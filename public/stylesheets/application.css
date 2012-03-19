@@ -15,10 +15,10 @@ figure {
   background-color: black;
   height: 400px; }
 
-nav ul, aside ul, footer ul {
+nav ul, footer ul {
   padding: 0;
   float: left; }
-  nav ul li, aside ul li, footer ul li {
+  nav ul li, footer ul li {
     float: left;
     margin-right: 15px; }
 
