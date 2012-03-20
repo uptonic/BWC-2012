@@ -21,8 +21,10 @@ h2, h3 {
 blockquote {
   margin-left: 0; }
 
-figure > img {
-  max-width: 100%; }
+figure {
+  line-height: 0px; }
+  figure > img {
+    max-width: 100%; }
 
 nav ul, footer ul {
   padding: 0;
