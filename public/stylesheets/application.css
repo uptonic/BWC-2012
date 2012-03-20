@@ -1,19 +1,28 @@
 body {
-  background-color: #fff;
-  font-family: 'Merriweather', serif;
-  font-weight: 400; }
+  background: white url(/images/grid_noise.png) repeat scroll top left;
+  font-family: "calluna-sans-1", "calluna-sans-2";
+  font-weight: 400;
+  color: #333;
+  line-height: 1.5em; }
+
+h1, h2, h3, h4, h5 {
+  color: #000; }
 
 h1 {
-  font-family: 'Bree Serif', serif;
-  font-weight: 400; }
+  font-family: "adelle-1", "adelle-2";
+  font-weight: 800;
+  line-height: 1.2em; }
+
+h2, h3 {
+  font-family: "adelle-1", "adelle-2";
+  font-weight: 300;
+  line-height: 1.2em; }
 
 blockquote {
   margin-left: 0; }
 
-figure {
-  width: 100%;
-  background-color: black;
-  height: 400px; }
+figure > img {
+  max-width: 100%; }
 
 nav ul, footer ul {
   padding: 0;
@@ -22,15 +31,17 @@ nav ul, footer ul {
     float: left;
     margin-right: 15px; }
 
+header.row {
+  margin-bottom: 3.0em; }
+
 aside h2 {
   margin-top: 0; }
 aside ul {
-  padding-left: 1.0em; }
+  padding-left: 1.5em; }
 
 footer {
   border-top: 1px solid #000;
-  padding-top: 1.0em;
-  margin-top: 1.0em;
+  margin-top: 3.0em;
   text-align: center; }
 
 footer ul {
