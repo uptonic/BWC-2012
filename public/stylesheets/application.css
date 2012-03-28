@@ -1,49 +1,8 @@
-body {
-  background: white url(/images/grid_noise.png) repeat scroll top left;
-  font-family: "calluna-sans-1", "calluna-sans-2";
-  font-weight: 400;
-  color: #333;
-  line-height: 1.5em; }
-
-h1, h2, h3, h4, h5 {
-  color: #000; }
-
-h1 {
-  font-family: "adelle-1", "adelle-2";
-  font-weight: 800;
-  line-height: 1.2em; }
-
-h2, h3 {
-  font-family: "adelle-1", "adelle-2";
-  font-weight: 300;
-  line-height: 1.2em; }
-
-blockquote {
-  margin-left: 0; }
-
-figure {
-  line-height: 0px; }
-  figure > img {
-    max-width: 100%; }
-
-nav ul, footer ul {
-  padding: 0;
-  float: left; }
-  nav ul li, footer ul li {
-    float: left;
-    margin-right: 15px; }
-
-aside h2 {
-  margin-top: 0; }
-aside ul {
-  padding-left: 1.5em; }
-
-footer {
-  border-top: 1px solid #000;
-  margin-top: 3.0em;
-  text-align: center; }
-
-footer ul {
-  list-style: none; }
-  footer ul li {
-    margin-right: 30px; }
+div.wrapper {
+  margin-left: 250px; }
+  div.wrapper nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    background-color: #ccc; }
