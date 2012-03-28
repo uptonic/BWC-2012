@@ -6,3 +6,31 @@ div.wrapper {
     left: 0;
     width: 250px;
     background-color: #ccc; }
+
+/* Smaller screens */
+/* Mobile */
+@media handheld, only screen and (max-width: 767px) {
+  body {
+    -webkit-text-size-adjust: none; }
+
+  div.wrapper {
+    margin-left: 0; }
+    div.wrapper nav {
+      position: static;
+      width: 100%;
+      background-color: #ccc; }
+
+  .grid_1,
+  .grid_2,
+  .grid_3,
+  .grid_4,
+  .grid_5,
+  .grid_6,
+  .grid_7,
+  .grid_8,
+  .grid_9 {
+    display: block;
+    float: none;
+    position: relative;
+    margin: 0;
+    width: 100% !important; } }
