@@ -8,6 +8,12 @@ div.wrapper {
     background-color: #ccc; }
 
 /* Smaller screens */
+@media only screen and (max-width: 1023px) {
+  div.wrapper {
+    margin-left: 0; }
+    div.wrapper nav {
+      position: static;
+      width: 100%; } }
 /* Mobile */
 @media handheld, only screen and (max-width: 767px) {
   body {
@@ -17,8 +23,7 @@ div.wrapper {
     margin-left: 0; }
     div.wrapper nav {
       position: static;
-      width: 100%;
-      background-color: #ccc; }
+      width: 100%; }
 
   .grid_1,
   .grid_2,
