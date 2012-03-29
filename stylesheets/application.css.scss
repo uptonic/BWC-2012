@@ -1,13 +1,22 @@
 html {
-  background: #c0ced1 url('/images/bkd_diagonal_blue.jpg') repeat scroll top left;
 }
 
 body {
-  background: url('/images/bkd_wood.jpg') repeat-x scroll top left;
+  background: #c0ced1 url('/images/bkd_diagonal_blue.jpg') repeat scroll top left;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   color: #333;
   padding-top: 10px;
+}
+
+header {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background: url('/images/bkd_wood.jpg') repeat-x scroll top left;
 }
 
 nav {
@@ -51,7 +60,12 @@ footer {
   margin-left: 250px;
 }
 
+div.wrapper {
+  padding-bottom: 3.0em;
+}
+
 footer {
+  border-top: 10px solid #7f8178;
   background: #a4a79d url('/images/bkd_mesh_brown.jpg') repeat scroll top left;
 }
 
