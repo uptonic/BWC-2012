@@ -6,12 +6,13 @@ body {
 
 nav {
   position: fixed;
+  padding-top: 40px;
   top: 0;
   left: 0;
   width: 250px;
   text-align: center; }
   nav ul {
-    margin: 0;
+    margin: 20px 0 0 0;
     padding: 0;
     font-size: 18px;
     font-family: 'Merriweather', serif; }
@@ -61,8 +62,17 @@ p {
 /* Smaller screens */
 @media only screen and (max-width: 1023px) {
   nav {
+    padding-top: 15px;
     position: static;
     width: 100%; }
+    nav ul {
+      overflow: hidden;
+      margin: 10px auto;
+      width: 100%; }
+      nav ul li {
+        display: inline-block; }
+        nav ul li a {
+          padding: 0 10px; }
 
   div.wrapper,
   footer {
@@ -72,9 +82,8 @@ p {
   body {
     -webkit-text-size-adjust: none; }
 
-  nav {
-    position: static;
-    width: 100%; }
+  nav ul {
+    font-size: 16px; }
 
   div.wrapper,
   footer {

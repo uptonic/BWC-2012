@@ -7,13 +7,14 @@ body {
 
 nav {
   position: fixed;
+  padding-top: 40px;
   top: 0;
   left: 0;
   width: 250px;
   text-align: center;
   
   ul {
-    margin: 0;
+    margin: 20px 0 0 0;
     padding: 0;
     font-size: 18px;
     font-family: 'Merriweather', serif;
@@ -82,8 +83,23 @@ p {
 /* Smaller screens */
 @media only screen and (max-width: 1023px) {
   nav {
+    padding-top: 15px;
     position: static;
     width: 100%;
+    
+    ul {
+      overflow: hidden;
+      margin: 10px auto;
+      width: 100%;
+      
+      li {
+        display: inline-block;
+        
+        a {
+          padding: 0 10px;
+        }
+      }
+    }
   }
   
   div.wrapper,
@@ -101,8 +117,9 @@ p {
 	}
 	
 	nav {
-    position: static;
-    width: 100%;
+    ul {
+      font-size: 16px;
+    }
   }
 	
 	div.wrapper,
