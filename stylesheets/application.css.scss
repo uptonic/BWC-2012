@@ -1,5 +1,8 @@
 body {
   background: #c0ced1 url('/images/bkd_diagonal_blue.jpg') repeat scroll top left;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: #333;
 }
 
 nav {
@@ -8,6 +11,32 @@ nav {
   left: 0;
   width: 250px;
   text-align: center;
+  
+  ul {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-family: 'Merriweather', serif;
+    
+    li {
+      a {
+        text-decoration: none;
+        color: #5f6667;
+        padding: 10px 0;
+        display: block;
+        -webkit-transition: color 150ms ease-in-out;
+      
+        &.selected {
+          color: #930;
+        }
+        
+        &:hover,
+        &:visited:hover {
+          color: #383c3d;
+        }
+      }
+    }
+  }
 }
 
 div.wrapper,
@@ -18,6 +47,36 @@ footer {
 
 footer {
   background: #a4a79d url('/images/bkd_mesh_brown.jpg') repeat scroll top left;
+}
+
+h1, h2 {
+  font-family: 'Merriweather', serif;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: 400;
+  color: #366;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+h4 {
+  font-weight: 400;
+  font-size: 18px;
+  color: #666;
+}
+
+p {
+  font-size: 15px;
 }
 
 /* Smaller screens */
