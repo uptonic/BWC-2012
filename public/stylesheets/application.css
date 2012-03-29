@@ -1,29 +1,42 @@
-div.wrapper {
+body {
+  background: #c0ced1 url("/images/bkd_diagonal_blue.jpg") repeat scroll top left; }
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  text-align: center; }
+
+div.wrapper,
+footer {
+  background: #f2f3ed url("/images/bkd_diagonal_tan.jpg") repeat scroll top left;
   margin-left: 250px; }
-  div.wrapper nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 250px;
-    background-color: #ccc; }
+
+footer {
+  background: #a4a79d url("/images/bkd_mesh_brown.jpg") repeat scroll top left; }
 
 /* Smaller screens */
 @media only screen and (max-width: 1023px) {
-  div.wrapper {
-    margin-left: 0; }
-    div.wrapper nav {
-      position: static;
-      width: 100%; } }
+  nav {
+    position: static;
+    width: 100%; }
+
+  div.wrapper,
+  footer {
+    margin-left: 0; } }
 /* Mobile */
 @media handheld, only screen and (max-width: 767px) {
   body {
     -webkit-text-size-adjust: none; }
 
-  div.wrapper {
+  nav {
+    position: static;
+    width: 100%; }
+
+  div.wrapper,
+  footer {
     margin-left: 0; }
-    div.wrapper nav {
-      position: static;
-      width: 100%; }
 
   .grid_1,
   .grid_2,
@@ -35,7 +48,4 @@ div.wrapper {
   .grid_8,
   .grid_9 {
     display: block;
-    float: none;
-    position: relative;
-    margin: 0;
     width: 100% !important; } }

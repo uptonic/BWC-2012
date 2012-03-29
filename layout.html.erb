@@ -28,18 +28,9 @@
 
 <body>
 
-<div class="wrapper">
-  <nav>
-    <ul>
-      <li><a href="/">Home</a></li>
-      <li><a href="/gallery/">Gallery</a></li>
-      <li><a href="/about/">About Us</a></li>
-      <li><a href="/testimonials/">Testimonials</a></li>
-      <li><a href="/resources/">Resources</a></li>
-      <li><a href="/contact/">Contact Us</a></li>
-    </ul>
-  </nav>
-  
+<%= render '_navigation.html.erb' %>
+
+<div class="wrapper clearfix">  
   <div class="container_9">
     
     <div class="grid_3">
@@ -58,6 +49,14 @@
     <%#= yield %>
   </div>
 </div>
+
+<footer class="clearfix">
+  <div class="container_9">
+    <div class="grid_7">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+  </div>
+</footer>
 
 <!-- HTML5 IE Enabling Script -->
 <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->

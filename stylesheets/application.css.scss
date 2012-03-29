@@ -1,23 +1,34 @@
-div.wrapper {
-  nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 250px;
-    background-color: #ccc;
-  }
-  
+body {
+  background: #c0ced1 url('/images/bkd_diagonal_blue.jpg') repeat scroll top left;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  text-align: center;
+}
+
+div.wrapper,
+footer {
+  background: #f2f3ed url('/images/bkd_diagonal_tan.jpg') repeat scroll top left;  
   margin-left: 250px;
 }
 
+footer {
+  background: #a4a79d url('/images/bkd_mesh_brown.jpg') repeat scroll top left;
+}
 
 /* Smaller screens */
 @media only screen and (max-width: 1023px) {
-  div.wrapper {
-    nav {
-      position: static;
-      width: 100%;
-    }
+  nav {
+    position: static;
+    width: 100%;
+  }
+  
+  div.wrapper,
+  footer {
     margin-left: 0;
   }
 }
@@ -30,11 +41,13 @@ div.wrapper {
 	  -webkit-text-size-adjust: none;
 	}
 	
-	div.wrapper {
-    nav {
-      position: static;
-      width: 100%;
-    }
+	nav {
+    position: static;
+    width: 100%;
+  }
+	
+	div.wrapper,
+	footer {
     margin-left: 0;
   }
 	
@@ -48,9 +61,6 @@ div.wrapper {
   .grid_8,
   .grid_9 {
   	display: block;
-  	float: none;
-  	position: relative;
-  	margin: 0;
   	width: 100% !important;
   }
 }
