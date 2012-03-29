@@ -1,8 +1,12 @@
+html {
+  background: #c0ced1 url("/images/bkd_diagonal_blue.jpg") repeat scroll top left; }
+
 body {
-  background: #c0ced1 url("/images/bkd_diagonal_blue.jpg") repeat scroll top left;
+  background: url("/images/bkd_wood.jpg") repeat-x scroll top left;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
-  color: #333; }
+  color: #333;
+  padding-top: 10px; }
 
 nav {
   position: fixed;
