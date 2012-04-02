@@ -59,7 +59,7 @@ footer {
   border-top: 10px solid #7f8178;
   background: #a4a79d url("/images/bkd_mesh_brown.jpg") repeat scroll top left; }
 
-h1, h2 {
+h1, h2, blockquote {
   font-family: 'Merriweather', serif; }
 
 h1 {
@@ -83,6 +83,11 @@ h4 {
 p {
   font-size: 15px; }
 
+blockquote {
+  line-height: 1.5em;
+  color: #666;
+  margin: 1.0em 0; }
+
 hr {
   background: transparent url("../images/divider_leaf.png") no-repeat scroll center center;
   display: block;
@@ -101,6 +106,8 @@ hr {
       overflow: hidden;
       margin: 10px auto;
       width: 100%; }
+      nav ul.contact {
+        padding: 0.5em 0; }
       nav ul li {
         display: inline-block;
         padding: 0 10px; }
