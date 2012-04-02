@@ -20,7 +20,8 @@ figure {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   margin-bottom: 2.0em; }
   figure > img {
-    width: 100%; }
+    width: 100%;
+    display: block; }
 
 nav {
   position: fixed;
@@ -44,15 +45,22 @@ nav {
     nav ul li {
       padding: 3px 0; }
       nav ul li a {
-        padding: 6px 0;
+        padding: 6px 10px 5px 10px;
         color: inherit;
         text-decoration: none;
-        display: block;
-        -webkit-transition: color 150ms ease-in-out; }
-        nav ul li a.selected {
-          color: #930; }
+        display: inline-block;
+        -webkit-transition: all 100ms ease-in-out;
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        border-radius: 6px; }
         nav ul li a:hover, nav ul li a:visited:hover {
+          background-color: rgba(0, 0, 0, 0.05);
           color: #383c3d; }
+        nav ul li a.selected {
+          color: #930;
+          background-color: rgba(0, 0, 0, 0.05); }
+          nav ul li a.selected:hover, nav ul li a.selected:visited:hover {
+            color: #930; }
 
 div.wrapper,
 footer {
@@ -113,7 +121,7 @@ div.masthead {
     position: static;
     width: 100%; }
     nav hr {
-      margin: 0 4%; }
+      display: none; }
     nav ul {
       overflow: hidden;
       margin: 10px auto;
@@ -122,9 +130,9 @@ div.masthead {
         padding: 0.5em 0; }
       nav ul li {
         display: inline-block;
-        padding: 0 10px; }
+        padding: 0 6px; }
         nav ul li a {
-          padding: 2px 0; }
+          padding: 3px 6px; }
 
   div.wrapper,
   footer {
@@ -137,9 +145,17 @@ div.masthead {
   nav ul {
     font-size: 16px; }
 
+  figure {
+    padding: 0;
+    background-color: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); }
+
   div.wrapper,
   footer {
     margin-left: 0; }
+
+  div.masthead {
+    background: none; }
 
   .grid_1,
   .grid_2,

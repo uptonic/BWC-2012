@@ -1,5 +1,4 @@
-html {
-}
+html {}
 
 body {
   background: #c0ced1 url('/images/bkd_diagonal_blue.jpg') repeat scroll top left;
@@ -25,7 +24,7 @@ figure {
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
   margin-bottom: 2.0em;
   
-  > img { width: 100%; }
+  > img { width: 100%; display: block; }
 }
 
 nav {
@@ -59,19 +58,29 @@ nav {
       padding: 3px 0;
       
       a {
-        padding: 6px 0;
+        padding: 6px 10px 5px 10px;
         color: inherit;
         text-decoration: none;
-        display: block;
-        -webkit-transition: color 150ms ease-in-out;
-      
-        &.selected {
-          color: #930;
-        }
+        display: inline-block;
+        -webkit-transition: all 100ms ease-in-out;
+        -webkit-border-radius: 6px;
+           -moz-border-radius: 6px;
+                border-radius: 6px;
         
         &:hover,
         &:visited:hover {
+          background-color: rgba(0,0,0,0.05);
           color: #383c3d;
+        }
+        
+        &.selected {
+          color: #930;
+          background-color: rgba(0,0,0,0.05);
+          
+          &:hover,
+          &:visited:hover {
+            color: #930;
+          }
         }
       }
     }
@@ -149,7 +158,7 @@ div.masthead {
     position: static;
     width: 100%;
     
-    hr { margin: 0 4%; }
+    hr { display: none; }
     
     ul {
       overflow: hidden;
@@ -162,10 +171,10 @@ div.masthead {
       
       li {
         display: inline-block;
-        padding: 0 10px;
+        padding: 0 6px;
         
         a {
-          padding: 2px 0;
+          padding: 3px 6px;
         }
       }
     }
@@ -189,10 +198,20 @@ div.masthead {
     ul { font-size: 16px; }
   }
 	
+	figure {
+    padding: 0;
+    background-color: none;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+  }
+	
 	div.wrapper,
 	footer {
     margin-left: 0;
   }
+	
+	div.masthead {
+	  background: none;
+	}
 	
 	.grid_1,
   .grid_2,
