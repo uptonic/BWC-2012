@@ -1,6 +1,6 @@
 body {
   background: #c0ced1 url("/images/bkd_diagonal_blue.jpg") repeat scroll top left;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'ProximaNova', sans-serif;
   font-weight: 400;
   color: #333;
   padding-top: 10px; }
@@ -30,7 +30,7 @@ nav {
   left: 0;
   width: 250px;
   text-align: center;
-  font-family: 'Merriweather', serif; }
+  font-family: "Merriweather", serif; }
   nav > img {
     margin-bottom: 1.0em; }
   nav hr {
@@ -50,6 +50,7 @@ nav {
         text-decoration: none;
         display: inline-block;
         -webkit-transition: all 100ms ease-in-out;
+        -moz-transition: all 100ms ease-in-out;
         -webkit-border-radius: 6px;
         -moz-border-radius: 6px;
         border-radius: 6px; }
@@ -62,6 +63,25 @@ nav {
           nav ul li a.selected:hover, nav ul li a.selected:visited:hover {
             color: #930; }
 
+aside {
+  background-color: rgba(148, 151, 142, 0.2);
+  padding: 20px 20px 15px 20px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px; }
+  aside ul {
+    font-family: 'Merriweather', serif;
+    font-size: 14px;
+    color: #fff;
+    padding: 0 1.25em; }
+    aside ul li {
+      margin-bottom: 6px; }
+      aside ul li span {
+        color: #4d4d4d; }
+  aside h3 {
+    font-size: 16px;
+    margin: 0; }
+
 div.wrapper,
 footer {
   max-width: 1040px;
@@ -72,11 +92,12 @@ div.wrapper {
   padding-bottom: 3.0em; }
 
 footer {
+  padding-top: 20px;
   border-top: 10px solid #7f8178;
   background: #a4a79d url("/images/bkd_mesh_brown.jpg") repeat scroll top left; }
 
 h1, h2, blockquote {
-  font-family: 'Merriweather', serif; }
+  font-family: "Merriweather", serif; }
 
 h1 {
   font-size: 32px;
@@ -148,7 +169,7 @@ div.masthead {
   figure {
     padding: 0;
     background-color: none;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); }
+    box-shadow: none; }
 
   div.wrapper,
   footer {
