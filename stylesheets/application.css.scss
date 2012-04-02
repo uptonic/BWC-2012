@@ -138,6 +138,10 @@ hr {
   border: none;
 }
 
+div.masthead {
+  background: transparent url('../images/donna_and_randy.png') no-repeat scroll bottom right;
+}
+
 /* Smaller screens */
 @media only screen and (max-width: 1023px) {
   nav {
