@@ -31,7 +31,7 @@ nav {
   width: 230px;
   text-align: center;
   font-family: "Merriweather", serif; }
-  nav > img {
+  nav > a img {
     margin-bottom: 1.0em; }
   nav hr {
     margin: 1.2em 3.0em; }
