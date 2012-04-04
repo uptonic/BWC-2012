@@ -72,24 +72,29 @@ aside {
   aside ul {
     font-family: 'Merriweather', serif;
     font-size: 14px;
-    color: #fff;
     padding: 0 1.25em; }
     aside ul li {
       margin-bottom: 8px; }
-      aside ul li span {
-        color: #4d4d4d; }
   aside h3 {
-    font-size: 16px;
+    font-size: 20px;
+    font-weight: normal;
+    color: #930;
     margin: 0; }
 
-div.wrapper,
+div.content,
 footer {
   max-width: 1040px;
   background: #f2f3ed url("/images/bkd_diagonal_tan.jpg") repeat fixed top left;
   margin-left: 230px; }
 
-div.wrapper {
+div.content {
   padding-bottom: 3.0em; }
+  div.content h3 {
+    margin: 0 0 0.33em 0; }
+    div.content h3 + p {
+      margin-top: 0; }
+  div.content hr {
+    height: 36px; }
 
 footer {
   padding-top: 20px;
@@ -133,7 +138,13 @@ hr {
   border: none; }
 
 div.masthead {
-  background: transparent url("../images/donna_and_randy.png") no-repeat scroll bottom right; }
+  background: transparent url("../images/donna_and_randy.png") no-repeat scroll bottom right;
+  min-height: 162px; }
+  div.masthead h1 {
+    margin: 0 0 1.0em 0; }
+  div.masthead h4 {
+    margin-top: 2.0em;
+    margin-bottom: 0.33em; }
 
 /* Smaller screens */
 @media only screen and (max-width: 1023px) {
@@ -155,7 +166,7 @@ div.masthead {
         nav ul li a {
           padding: 3px 6px; }
 
-  div.wrapper,
+  div.content,
   footer {
     margin-left: 0; } }
 /* Mobile */
@@ -171,7 +182,7 @@ div.masthead {
     background-color: none;
     box-shadow: none; }
 
-  div.wrapper,
+  div.content,
   footer {
     margin-left: 0; }
 
