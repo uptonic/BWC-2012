@@ -2,13 +2,13 @@
   <img src="/images/logo.png">
   
   <ul>
-    <li><a href="/" class="selected">Home</a></li>
-    <li><a href="/gallery/">Gallery</a></li>
-    <li><a href="/about/">About Us</a></li>
-    <li><a href="/about/">Our Process</a></li>
-    <li><a href="/testimonials/">Testimonials</a></li>
-    <li><a href="/resources/">Resources</a></li>
-    <li><a href="/contact/">Contact Us</a></li>
+    <li><a href="/" class="<%= "selected" if @nav_home %>">Home</a></li>
+    <li><a href="/gallery/" class="<%= "selected" if @nav_gallery %>">Gallery</a></li>
+    <li><a href="/about/" class="<%= "selected" if @nav_about %>">About Us</a></li>
+    <li><a href="/process/" class="<%= "selected" if @nav_process %>">Our Process</a></li>
+    <li><a href="/testimonials/" class="<%= "selected" if @nav_testimonials %>">Testimonials</a></li>
+    <li><a href="/resources/" class="<%= "selected" if @nav_resources %>">Resources</a></li>
+    <li><a href="/contact/" class="<%= "selected" if @nav_contact %>">Contact Us</a></li>
   </ul>
   
   <hr>

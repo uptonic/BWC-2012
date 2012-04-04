@@ -38,7 +38,7 @@ nav {
   nav ul {
     margin: 0;
     padding: 0;
-    font-size: 18px;
+    font-size: 16px;
     color: #5f6667; }
     nav ul.contact {
       font-size: 14px; }
@@ -64,7 +64,7 @@ nav {
             color: #930; }
 
 aside {
-  background-color: rgba(148, 151, 142, 0.2);
+  background-color: rgba(204, 102, 0, 0.2);
   padding: 20px 20px 15px 20px;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
@@ -75,7 +75,7 @@ aside {
     color: #fff;
     padding: 0 1.25em; }
     aside ul li {
-      margin-bottom: 6px; }
+      margin-bottom: 8px; }
       aside ul li span {
         color: #4d4d4d; }
   aside h3 {
@@ -100,11 +100,11 @@ h1, h2, blockquote {
   font-family: "Merriweather", serif; }
 
 h1 {
-  font-size: 32px;
+  font-size: 30px;
   font-weight: 400; }
 
 h2 {
-  font-size: 28px;
+  font-size: 26px;
   font-weight: 400;
   color: #366; }
 
