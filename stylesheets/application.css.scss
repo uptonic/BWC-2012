@@ -24,7 +24,7 @@ figure {
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
   margin-bottom: 2.0em;
   
-  > img { width: 100%; display: block; }
+  > img { max-width: 100%; display: block; }
 }
 
 nav {
@@ -47,11 +47,11 @@ nav {
   ul {
     margin: 0;
     padding: 0;
-    font-size: 16px;
+    font-size: 1.0em;
     color: #5f6667;
     
     &.contact {
-      font-size: 14px;
+      font-size: 0.875em;
     }
     
     li {
@@ -97,7 +97,7 @@ aside {
           
   ul {
     font-family: 'Merriweather', serif;
-    font-size: 14px;
+    font-size: 0.875em;
     padding: 0 1.25em;
     
     li {
@@ -107,7 +107,7 @@ aside {
   }
   
   h3 {
-    font-size: 20px;
+    font-size: 1.25em;
     font-weight: normal;
     color: #930;
     margin: 0;
@@ -162,7 +162,7 @@ footer {
       input[type=text],
       textarea {
         font-family: 'ProximaNova', sans-serif;
-        font-size: 18px;
+        font-size: 1.125em;
         color: #fff;
         border: none;
         width: 100%;
@@ -185,29 +185,29 @@ h1, h2, blockquote {
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 1.875em;
   font-weight: 400;
 }
 
 h2 {
-  font-size: 26px;
+  font-size: 1.625em;
   font-weight: 400;
   color: #366;
 }
 
 h3 {
+  font-size: 1.125em;
   font-weight: 700;
-  font-size: 18px;
 }
 
 h4 {
+  font-size: 1.125em;
   font-weight: 400;
-  font-size: 18px;
   color: #666;
 }
 
 p {
-  font-size: 15px;
+  font-size: 0.9375em;
   line-height: 1.5em;
 }
 
@@ -240,6 +240,10 @@ div.masthead {
 
 /* Smaller screens */
 @media only screen and (max-width: 1023px) {
+  body {
+    font-size: 14px;
+  }
+  
   nav {
     padding-top: 15px;
     position: static;
@@ -278,11 +282,12 @@ div.masthead {
 @media handheld, only screen and (max-width: 767px) {
 
 	body {
+	  font-size: 12px;
 	  -webkit-text-size-adjust: none;
 	}
 	
 	nav {
-    ul { font-size: 16px; }
+    ul { font-size: 1.0em; }
   }
 	
 	figure {
