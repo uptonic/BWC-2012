@@ -15,13 +15,10 @@ header {
   background: url("/images/bkd_wood.jpg") repeat-x scroll top left; }
 
 figure {
-  padding: 20px;
+  padding: 1.25em;
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   margin-bottom: 2.0em; }
-  figure > img {
-    max-width: 100%;
-    display: block; }
 
 nav {
   position: fixed;
@@ -31,8 +28,12 @@ nav {
   width: 230px;
   text-align: center;
   font-family: "Merriweather", serif; }
-  nav > a img {
-    margin-bottom: 1.0em; }
+  nav > a {
+    display: block;
+    width: 100%;
+    margin: 0 auto 1.5em auto; }
+    nav > a img {
+      margin: 0 auto; }
   nav hr {
     margin: 1.2em 3.0em; }
   nav ul {
@@ -81,11 +82,13 @@ aside {
     color: #930;
     margin: 0; }
 
+div.wrapper {
+  margin-left: 230px;
+  background: #f2f3ed url("/images/bkd_diagonal_tan.jpg") repeat fixed top left; }
+
 div.content,
-footer {
-  max-width: 1040px;
-  background: #f2f3ed url("/images/bkd_diagonal_tan.jpg") repeat fixed top left;
-  margin-left: 230px; }
+footer > div.inner {
+  max-width: 1040px; }
 
 div.content {
   padding-bottom: 3.0em; }
@@ -130,6 +133,10 @@ footer {
       footer table td textarea {
         height: 200px; }
 
+img {
+  max-width: 100%;
+  display: block; }
+
 h1, h2, blockquote {
   font-family: "Merriweather", serif; }
 
@@ -166,14 +173,19 @@ hr {
   height: 14px;
   border: none; }
 
-div.masthead {
-  background: transparent url("../images/donna_and_randy.png") no-repeat scroll bottom right;
-  min-height: 162px; }
-  div.masthead h1 {
-    margin: 0 0 1.0em 0; }
-  div.masthead h4 {
-    margin-top: 2.0em;
-    margin-bottom: 0.33em; }
+div.masthead td:first-of-type {
+  width: 64.667%;
+  padding-right: 20px;
+  vertical-align: middle; }
+div.masthead td:last-of-type {
+  width: 31.333%;
+  vertical-align: bottom; }
+  div.masthead td:last-of-type > img {
+    float: right; }
+div.masthead h1 {
+  margin: 0; }
+div.masthead h4 {
+  margin: 0 0 0.33em 0; }
 
 /* Smaller screens */
 @media only screen and (max-width: 1023px) {
@@ -184,6 +196,8 @@ div.masthead {
     padding-top: 15px;
     position: static;
     width: 100%; }
+    nav > a {
+      width: 100px; }
     nav hr {
       display: none; }
     nav ul {
@@ -198,8 +212,7 @@ div.masthead {
         nav ul li a {
           padding: 3px 6px; }
 
-  div.content,
-  footer {
+  div.wrapper {
     margin-left: 0; } }
 /* Mobile */
 @media handheld, only screen and (max-width: 767px) {
@@ -209,15 +222,6 @@ div.masthead {
 
   nav ul {
     font-size: 1.0em; }
-
-  figure {
-    padding: 0;
-    background-color: none;
-    box-shadow: none; }
-
-  div.content,
-  footer {
-    margin-left: 0; }
 
   div.masthead {
     background: none; }
