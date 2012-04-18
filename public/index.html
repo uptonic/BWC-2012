@@ -19,6 +19,15 @@
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
 <link rel="apple-touch-icon" sizes="72x72" href="/images/apple-touch-icon-72x72.png">
 <link rel="apple-touch-icon" sizes="114x114" href="/images/apple-touch-icon-114x114.png">
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+<script src="/javascripts/responsiveslides.min.js"></script>
+
+<script>
+  $(function () {
+    $("#slides").responsiveSlides();
+  });
+</script>
 </head>
 
 <body>
@@ -62,7 +71,16 @@
 <div class="clear">&nbsp;</div>
 
 <div class="grid_9">
-  <figure><img src="/images/photos/kitchen.jpg" alt="Kitchen"></figure>
+  <figure>
+    <ul id="slides">
+      <li><img src="/images/photos/kitchen.jpg" alt=""></li>
+      <li><img src="/images/photos/sample_1.jpg" alt=""></li>
+      <li><img src="/images/photos/sample_2.jpg" alt=""></li>
+      <li><img src="/images/photos/sample_3.jpg" alt=""></li>
+      <li><img src="/images/photos/sample_4.jpg" alt=""></li>
+      <li><img src="/images/photos/sample_5.jpg" alt=""></li>
+    </ul>  
+  </figure>
   
   <h2>Personal is our passion</h2>
   
