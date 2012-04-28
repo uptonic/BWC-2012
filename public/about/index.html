@@ -24,8 +24,18 @@
 <script src="/javascripts/responsiveslides.min.js"></script>
 
 <script>
+  function onBefore() {
+    console.log("Animation started.");
+  }
+  
+  function onAfter() {
+    console.log("Animation ended.");
+  }
+
   $(function () {
-    $("#slides").responsiveSlides();
+    $("#slides").responsiveSlides({
+      // options
+    }).bind('rslides-before', onBefore);
   });
 </script>
 </head>
