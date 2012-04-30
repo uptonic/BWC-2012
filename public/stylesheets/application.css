@@ -119,6 +119,8 @@ footer {
   padding: 10px 0 60px 0;
   border-top: 10px solid #7f8178;
   background: #a4a79d url("/images/bkd_mesh_brown.jpg") repeat scroll top left; }
+  footer p {
+    font-size: 1.125em; }
   footer h2 {
     color: #fff; }
   footer table {
@@ -221,6 +223,24 @@ body.about div.content h4 {
   margin: 0; }
 body.about div.content p {
   margin: 0.325em 0 0 0; }
+
+body.process figure {
+  margin: 0 0 0.625em 0;
+  padding: 0;
+  background-color: #366;
+  height: 2.0em;
+  width: 2.0em;
+  text-align: center;
+  font-size: 2.0em;
+  font-weight: bold;
+  color: white;
+  line-height: 2.0em;
+  -webkit-border-radius: 2.0em;
+  -moz-border-radius: 2.0em;
+  border-radius: 2.0em;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none; }
 
 /* Smaller screens */
 @media only screen and (max-width: 1023px) {
