@@ -19,6 +19,26 @@ before '/gallery/index.html.erb' do
   @nav_gallery = true
 end
 
+before '/gallery/kitchens/index.html.erb' do
+  @body_class = "gallery"
+  @nav_gallery = true
+end
+
+before '/gallery/baths/index.html.erb' do
+  @body_class = "gallery"
+  @nav_gallery = true
+end
+
+before '/gallery/interiors/index.html.erb' do
+  @body_class = "gallery"
+  @nav_gallery = true
+end
+
+before '/gallery/exteriors/index.html.erb' do
+  @body_class = "gallery"
+  @nav_gallery = true
+end
+
 before '/about/index.html.erb' do
   @body_class = "about"
   @nav_about = true
