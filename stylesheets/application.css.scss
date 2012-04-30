@@ -19,6 +19,15 @@ body {
   }
 }
 
+a:link, a:visited {
+  color: #366;
+}
+
+a:hover, a:visited:hover {
+  color: #222;
+  text-decoration: underline;
+}
+
 figure {
   margin-bottom: 1.5em;
   padding: 0.75em;
@@ -82,7 +91,7 @@ nav {
       
       a {
         padding: 6px 10px 5px 10px;
-        color: inherit;
+        color: inherit !important;
         text-decoration: none;
         display: inline-block;
         -webkit-transition: all 100ms ease-in-out;
@@ -93,12 +102,13 @@ nav {
         
         &:hover,
         &:visited:hover {
+          text-decoration: none;
           background-color: rgba(0,0,0,0.05);
           color: #383c3d;
         }
         
         &.selected {
-          color: #930;
+          color: #930 !important;
           background-color: rgba(0,0,0,0.05);
           
           &:hover,
@@ -152,7 +162,7 @@ footer > div.inner {
 }
 
 div.content {
-  padding-bottom: 2.0em;
+  padding-bottom: 3.0em;
   
   h3 {
     margin: 0 0 0.33em 0;
@@ -309,7 +319,8 @@ body.about {
   }
 }
 
-body.process {
+body.process,
+body.resources {
   figure {
     margin: 0 0 0.625em 0;
     padding: 0;
@@ -327,6 +338,17 @@ body.process {
     -webkit-box-shadow: none;
        -moz-box-shadow: none;
             box-shadow: none;
+  }
+}
+
+body.resources {
+  figure {
+    float: left;
+  }
+  
+  article.resource {
+    margin-bottom: 2.0em;
+    padding-left: 5.0em;
   }
 }
 

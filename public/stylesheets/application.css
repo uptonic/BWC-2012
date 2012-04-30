@@ -14,6 +14,13 @@ body {
     margin: 0;
     background: url("/images/bkd_wood.jpg") repeat-x scroll top left; }
 
+a:link, a:visited {
+  color: #366; }
+
+a:hover, a:visited:hover {
+  color: #222;
+  text-decoration: underline; }
+
 figure {
   margin-bottom: 1.5em;
   padding: 0.75em;
@@ -60,7 +67,7 @@ nav {
       padding: 3px 0; }
       nav ul li a {
         padding: 6px 10px 5px 10px;
-        color: inherit;
+        color: inherit !important;
         text-decoration: none;
         display: inline-block;
         -webkit-transition: all 100ms ease-in-out;
@@ -69,10 +76,11 @@ nav {
         -moz-border-radius: 6px;
         border-radius: 6px; }
         nav ul li a:hover, nav ul li a:visited:hover {
+          text-decoration: none;
           background-color: rgba(0, 0, 0, 0.05);
           color: #383c3d; }
         nav ul li a.selected {
-          color: #930;
+          color: #930 !important;
           background-color: rgba(0, 0, 0, 0.05); }
           nav ul li a.selected:hover, nav ul li a.selected:visited:hover {
             color: #930; }
@@ -107,7 +115,7 @@ footer > div.inner {
   max-width: 1040px; }
 
 div.content {
-  padding-bottom: 2.0em; }
+  padding-bottom: 3.0em; }
   div.content h3 {
     margin: 0 0 0.33em 0; }
     div.content h3 + p {
@@ -224,7 +232,8 @@ body.about div.content h4 {
 body.about div.content p {
   margin: 0.325em 0 0 0; }
 
-body.process figure {
+body.process figure,
+body.resources figure {
   margin: 0 0 0.625em 0;
   padding: 0;
   background-color: #366;
@@ -241,6 +250,12 @@ body.process figure {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none; }
+
+body.resources figure {
+  float: left; }
+body.resources article.resource {
+  margin-bottom: 2.0em;
+  padding-left: 5.0em; }
 
 /* Smaller screens */
 @media only screen and (max-width: 1023px) {
