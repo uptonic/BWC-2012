@@ -6,16 +6,16 @@ body {
   font-weight: 400;
   color: #333;
   padding-top: 10px;
-}
-
-header {
-  position: fixed;
-  z-index: 1000;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 10px;
-  background: url('/images/bkd_wood.jpg') repeat-x scroll top left;
+  
+  > header {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background: url('/images/bkd_wood.jpg') repeat-x scroll top left;
+  }
 }
 
 figure {
@@ -23,6 +23,16 @@ figure {
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
   margin-bottom: 2.0em;
+}
+
+header {
+  padding-bottom: 1.0em;
+  
+  p {
+    font-size: 1.25em;
+    line-height: 1.4em;
+    color: #666;
+  }
 }
 
 nav {
@@ -129,7 +139,7 @@ footer > div.inner {
 }
 
 div.content {
-  padding-bottom: 3.0em;
+  padding-bottom: 2.0em;
   
   h3 {
     margin: 0 0 0.33em 0;
@@ -261,17 +271,16 @@ div.masthead {
 }
 
 body.gallery {
-  h3 {
-    font-family: 'ProximaNova', sans-serif;
-    font-weight: normal;
-    font-size: 1.5em;
-    color: #366;
-    margin: 0 0 0.5em 0;
-  }
-  
-  figure {
-    margin-bottom: 1.5em;
-    padding: 0.625em;
+  div.content {
+    h2 {
+      font-size: 1.325em;
+      margin: 0 0 0.5em 0;
+    }
+
+    figure {
+      margin-bottom: 1.5em;
+      padding: 0.75em;
+    }
   }
 }
 
