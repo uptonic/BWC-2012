@@ -11,17 +11,24 @@ body {
     left: 0;
     width: 100%;
     height: 10px;
+    margin: 0;
     background: url("/images/bkd_wood.jpg") repeat-x scroll top left; }
 
 figure {
-  padding: 1.25em;
+  margin-bottom: 1.5em;
+  padding: 0.75em;
   background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  margin-bottom: 2.0em; }
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); }
+  figure.slideshow {
+    padding: 1.25em;
+    margin-bottom: 2.0em; }
 
 header {
-  padding-bottom: 1.0em; }
+  margin-bottom: 2.0em; }
   header p {
+    margin: 0;
     font-size: 1.25em;
     line-height: 1.4em;
     color: #666; }
@@ -87,6 +94,9 @@ aside {
     font-weight: normal;
     color: #930;
     margin: 0; }
+
+div.clear.padded {
+  padding: 1.25em 0; }
 
 div.wrapper {
   margin-left: 230px;
@@ -193,12 +203,24 @@ div.masthead h1 {
 div.masthead h4 {
   margin: 0 0 0.33em 0; }
 
+body.gallery div.content div.kitchens figure img {
+  background: #efefef url("/images/photos/kitchen.jpg") no-repeat scroll center top; }
+body.gallery div.content div.baths figure img {
+  background: #efefef url("/images/photos/sample_3.jpg") no-repeat scroll center top; }
+body.gallery div.content div.exteriors figure img {
+  background: #efefef url("/images/photos/sample_2.jpg") no-repeat scroll center top; }
+body.gallery div.content div.interiors figure img {
+  background: #efefef url("/images/photos/sample_1.jpg") no-repeat scroll center top; }
 body.gallery div.content h2 {
   font-size: 1.325em;
   margin: 0 0 0.5em 0; }
-body.gallery div.content figure {
-  margin-bottom: 1.5em;
-  padding: 0.75em; }
+
+body.about div.content h3 {
+  margin: 0; }
+body.about div.content h4 {
+  margin: 0; }
+body.about div.content p {
+  margin: 0.325em 0 0 0; }
 
 /* Smaller screens */
 @media only screen and (max-width: 1023px) {
