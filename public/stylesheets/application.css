@@ -167,8 +167,9 @@ h1, h2, blockquote {
   font-family: "Merriweather", serif; }
 
 h1 {
-  font-size: 1.875em;
-  font-weight: 400; }
+  font-size: 2.0em;
+  font-weight: 400;
+  color: #000; }
 
 h2 {
   font-size: 1.625em;
@@ -199,19 +200,22 @@ hr {
   height: 14px;
   border: none; }
 
-div.masthead td:first-of-type {
-  width: 64.667%;
-  padding-right: 20px;
-  vertical-align: middle; }
-div.masthead td:last-of-type {
-  width: 31.333%;
-  vertical-align: bottom; }
-  div.masthead td:last-of-type > img {
-    float: right; }
-div.masthead h1 {
-  margin: 0; }
-div.masthead h4 {
-  margin: 0 0 0.33em 0; }
+div.masthead {
+  margin-bottom: 1.5em;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15); }
+  div.masthead td:first-of-type {
+    width: 75.0%;
+    vertical-align: middle; }
+  div.masthead td:last-of-type {
+    width: 31.333%;
+    vertical-align: bottom; }
+    div.masthead td:last-of-type > img {
+      float: right; }
+  div.masthead h1 {
+    padding-top: 0.5em;
+    margin: 0; }
+  div.masthead h4 {
+    margin: 0 0 0.33em 0; }
 
 body.gallery div.content div.kitchens figure img {
   background: #efefef url("/images/photos/kitchen.jpg") no-repeat scroll center top; }
