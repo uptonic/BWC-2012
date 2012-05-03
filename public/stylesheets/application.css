@@ -39,6 +39,10 @@ header {
     font-size: 1.25em;
     line-height: 1.4em;
     color: #666; }
+  header h1 {
+    margin: 0 0 0.375em 0;
+    font-size: 1.625em;
+    color: #930; }
 
 nav {
   position: fixed;
@@ -202,7 +206,7 @@ hr {
 
 div.masthead {
   margin-bottom: 1.5em;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.15); }
+  border-bottom: 4px double rgba(0, 0, 0, 0.15); }
   div.masthead td:first-of-type {
     width: 75.0%;
     vertical-align: middle; }
@@ -213,7 +217,9 @@ div.masthead {
       float: right; }
   div.masthead h1 {
     padding-top: 0.5em;
-    margin: 0; }
+    margin: 0;
+    white-space: nowrap;
+    /*avoid flicker on load */ }
   div.masthead h4 {
     margin: 0 0 0.33em 0; }
 
@@ -226,15 +232,15 @@ body.gallery div.content div.exteriors figure img {
 body.gallery div.content div.interiors figure img {
   background: #efefef url("/images/photos/sample_1.jpg") no-repeat scroll center top; }
 body.gallery div.content h2 {
-  font-size: 1.325em;
+  font-family: 'Proxima Nova';
+  color: #333;
+  font-size: 1.5em;
   margin: 0 0 0.5em 0; }
 
 body.about div.content h3 {
   margin: 0; }
 body.about div.content h4 {
   margin: 0; }
-body.about div.content p {
-  margin: 0.325em 0 0 0; }
 
 body.process figure,
 body.resources figure {

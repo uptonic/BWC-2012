@@ -51,6 +51,12 @@ header {
     line-height: 1.4em;
     color: #666;
   }
+  
+  h1 {
+    margin: 0 0 0.375em 0;
+    font-size: 1.625em;
+    color: #930;
+  }
 }
 
 nav {
@@ -276,7 +282,7 @@ hr {
 
 div.masthead {
   margin-bottom: 1.5em;
-  border-bottom: 1px solid rgba(0,0,0,0.15);
+  border-bottom: 4px double rgba(0,0,0,0.15);
   
   td:first-of-type {
     width: 75.0%;
@@ -293,6 +299,7 @@ div.masthead {
   h1 {
     padding-top: 0.5em;
     margin: 0;
+    white-space: nowrap; /*avoid flicker on load */
   }
   
   h4 {
@@ -308,7 +315,9 @@ body.gallery {
     div.interiors figure img { background: #efefef url('/images/photos/sample_1.jpg') no-repeat scroll center top; }
 
     h2 {
-      font-size: 1.325em;
+      font-family: 'Proxima Nova';
+      color: #333;
+      font-size: 1.5em;
       margin: 0 0 0.5em 0;
     }
   }
@@ -318,7 +327,6 @@ body.about {
   div.content {
     h3 { margin: 0; }
     h4 { margin: 0; }
-    p { margin: 0.325em 0 0 0; }
   }
 }
 
