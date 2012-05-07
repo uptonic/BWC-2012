@@ -73,7 +73,7 @@ nav {
       display: inline-block;
       
       &:first-of-type {
-        margin-left: -0.625em;
+        margin-left: -0.5em;
       }
     }
     
@@ -81,7 +81,7 @@ nav {
     a:visited {
       color: #666;
       display: block;
-      padding: 0.625em;
+      padding: 0.5em;
       text-decoration: none;
       
       &:hover,
@@ -212,9 +212,10 @@ h1 {
 }
 
 h2 {
-  font-size: 1.625em;
-  font-weight: 400;
-  color: #366;
+  font-size: 1.5em;
+  font-weight: 700;
+  color: #000;
+  margin-top: 0;
 }
 
 h3 {

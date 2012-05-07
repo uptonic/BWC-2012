@@ -55,12 +55,12 @@ nav {
     nav ul li {
       display: inline-block; }
       nav ul li:first-of-type {
-        margin-left: -0.625em; }
+        margin-left: -0.5em; }
     nav ul a:link,
     nav ul a:visited {
       color: #666;
       display: block;
-      padding: 0.625em;
+      padding: 0.5em;
       text-decoration: none; }
       nav ul a:link:hover, nav ul a:link:visited:hover,
       nav ul a:visited:hover,
@@ -155,9 +155,10 @@ h1 {
   color: #000; }
 
 h2 {
-  font-size: 1.625em;
-  font-weight: 400;
-  color: #366; }
+  font-size: 1.5em;
+  font-weight: 700;
+  color: #000;
+  margin-top: 0; }
 
 h3 {
   font-size: 1.125em;
