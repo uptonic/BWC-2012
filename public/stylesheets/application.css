@@ -1,5 +1,5 @@
 body {
-  background: #c0ced1 url("/images/bkd_diagonal_blue.jpg") repeat fixed top left;
+  background: #f2f3ed url("/images/bkd_diagonal_tan.jpg") repeat fixed top left;
   font-family: 'ProximaNova', sans-serif;
   font-weight: 400;
   color: #333;
@@ -45,49 +45,31 @@ header {
     color: #930; }
 
 nav {
-  position: fixed;
-  padding-top: 30px;
-  top: 0;
-  left: 0;
-  width: 230px;
-  text-align: center;
-  font-family: "Merriweather", serif; }
-  nav > a {
-    display: block;
-    width: 100%;
-    margin: 0 auto 1.5em auto; }
-    nav > a img {
-      margin: 0 auto; }
-  nav hr {
-    margin: 1.2em 3.0em; }
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15); }
   nav ul {
-    margin: 0;
     padding: 0;
-    font-size: 1.0em;
-    color: #5f6667; }
-    nav ul.contact {
-      font-size: 0.875em; }
+    margin: 0;
+    width: 100%;
+    list-style: none; }
     nav ul li {
-      padding: 3px 0; }
-      nav ul li a {
-        padding: 6px 10px 5px 10px;
-        color: inherit !important;
-        text-decoration: none;
-        display: inline-block;
-        -webkit-transition: all 100ms ease-in-out;
-        -moz-transition: all 100ms ease-in-out;
-        -webkit-border-radius: 6px;
-        -moz-border-radius: 6px;
-        border-radius: 6px; }
-        nav ul li a:hover, nav ul li a:visited:hover {
-          text-decoration: none;
-          background-color: rgba(0, 0, 0, 0.05);
-          color: #383c3d; }
-        nav ul li a.selected {
-          color: #930 !important;
-          background-color: rgba(0, 0, 0, 0.05); }
-          nav ul li a.selected:hover, nav ul li a.selected:visited:hover {
-            color: #930; }
+      display: inline-block; }
+      nav ul li:first-of-type {
+        margin-left: -0.625em; }
+    nav ul a:link,
+    nav ul a:visited {
+      color: #666;
+      display: block;
+      padding: 0.625em;
+      text-decoration: none; }
+      nav ul a:link:hover, nav ul a:link:visited:hover,
+      nav ul a:visited:hover,
+      nav ul a:visited:visited:hover {
+        color: #000; }
+      nav ul a:link.selected,
+      nav ul a:visited.selected {
+        color: #000;
+        font-weight: bold; }
 
 aside {
   background-color: rgba(204, 102, 0, 0.2);
@@ -110,15 +92,12 @@ aside {
 div.clear.padded {
   padding: 1.25em 0; }
 
-div.wrapper {
-  margin-left: 230px;
-  background: #f2f3ed url("/images/bkd_diagonal_tan.jpg") repeat fixed top left; }
-
 div.content,
 footer > div.inner {
   max-width: 1040px; }
 
 div.content {
+  margin: 0 auto;
   padding-bottom: 3.0em; }
   div.content h3 {
     margin: 0 0 0.33em 0; }
@@ -189,6 +168,11 @@ h4 {
   font-weight: 400;
   color: #666; }
 
+h5 {
+  font-size: 0.9375em;
+  font-weight: 400;
+  color: gray; }
+
 p {
   font-size: 0.9375em;
   line-height: 1.5em; }
@@ -205,23 +189,32 @@ hr {
   border: none; }
 
 div.masthead {
-  margin-bottom: 1.5em;
-  border-bottom: 4px double rgba(0, 0, 0, 0.15); }
-  div.masthead td:first-of-type {
-    width: 75.0%;
+  margin-bottom: 1.5em; }
+  div.masthead td {
     vertical-align: middle; }
-  div.masthead td:last-of-type {
-    width: 31.333%;
-    vertical-align: bottom; }
-    div.masthead td:last-of-type > img {
-      float: right; }
-  div.masthead h1 {
-    padding-top: 0.5em;
-    margin: 0;
-    white-space: nowrap;
-    /*avoid flicker on load */ }
-  div.masthead h4 {
-    margin: 0 0 0.33em 0; }
+    div.masthead td:first-of-type {
+      width: 11%; }
+      div.masthead td:first-of-type img {
+        float: left; }
+    div.masthead td:nth-of-type(2) {
+      width: 65%;
+      vertical-align: middle;
+      padding-left: 0.825em;
+      padding-top: 0.5em; }
+      div.masthead td:nth-of-type(2) h1 {
+        margin: 0;
+        white-space: nowrap;
+        /*avoid flicker on load */ }
+      div.masthead td:nth-of-type(2) h4 {
+        margin: -0.2em 0 0.5em 0;
+        color: #930; }
+      div.masthead td:nth-of-type(2) h5 {
+        margin: 0; }
+    div.masthead td:last-of-type {
+      width: 25%;
+      vertical-align: bottom; }
+      div.masthead td:last-of-type img {
+        float: right; }
 
 body.gallery div.content div.kitchens figure img {
   background: #efefef url("/images/photos/kitchen.jpg") no-repeat scroll center top; }
@@ -271,26 +264,6 @@ body.resources article.resource {
 @media only screen and (max-width: 1023px) {
   body {
     font-size: 14px; }
-
-  nav {
-    padding-top: 15px;
-    position: static;
-    width: 100%; }
-    nav > a {
-      width: 100px; }
-    nav hr {
-      display: none; }
-    nav ul {
-      overflow: hidden;
-      margin: 10px auto;
-      width: 100%; }
-      nav ul.contact {
-        padding: 0.5em 0; }
-      nav ul li {
-        display: inline-block;
-        padding: 0 6px; }
-        nav ul li a {
-          padding: 3px 6px; }
 
   div.wrapper {
     margin-left: 0; } }
