@@ -33,8 +33,13 @@
   }
 
   $(function () {
-    $("#slides").responsiveSlides({
+    $("#slides_home").responsiveSlides({
       // options
+    }).bind('rslides-before', onBefore);
+    
+    $("#slides").responsiveSlides({
+      auto: false,
+      nav: true
     }).bind('rslides-before', onBefore);
   });
 </script>
@@ -71,13 +76,12 @@
       <li><a href="/testimonials/" class="">Testimonials</a></li>
       <li><a href="/resources/" class="">Resources</a></li>
       <li><a href="/contact/" class="">Contact Us</a></li>
-      <li style="float:right;font-size:0.8375em;line-height:3.0em;color:#666;">(303) 449-3298 &bull; info@bw-construction.com</li>
+      <li style="float:right;font-size:0.8375em;line-height:2.625em;color:#666;">(303) 449-3298 &bull; info@bw-construction.com</li>
     </ul>
   </nav>
 </div>
       <header class="grid_12">
   <h1>Gallery / Interiors</h1>
-  <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
 </header>
 <div class="clear">&nbsp;</div>
 
@@ -85,27 +89,27 @@
   <figure class="slideshow">
     <ul id="slides">
       <li>
-        <a href="/gallery/"><img src="/images/photos/sample_1.jpg" alt=""></a>
+        <img src="/images/photos/sample_1.jpg" alt="">
         <figcaption>So does this one!</figcaption>
       </li>
       <li>
-        <a href="/gallery/"><img src="/images/photos/sample_2.jpg" alt=""></a>
+        <img src="/images/photos/sample_2.jpg" alt="">
         <figcaption>Wait, me too!</figcaption>
       </li>
       <li>
-        <a href="/gallery/"><img src="/images/photos/sample_3.jpg" alt=""></a>
+        <img src="/images/photos/sample_3.jpg" alt="">
         <figcaption>So does this one!</figcaption>
       </li>
       <li>
-        <a href="/gallery/"><img src="/images/photos/sample_4.jpg" alt=""></a>
+        <img src="/images/photos/sample_4.jpg" alt="">
         <figcaption>Don't forget about me!</figcaption>
       </li>
       <li>
-        <a href="/gallery/"><img src="/images/photos/sample_5.jpg" alt=""></a>
+        <img src="/images/photos/sample_5.jpg" alt="">
         <figcaption>And me!</figcaption>
       </li>
       <li>
-        <a href="/gallery/"><img src="/images/photos/kitchen.jpg" alt=""></a>
+        <img src="/images/photos/kitchen.jpg" alt="">
         <figcaption>This photo has a nice caption.</figcaption>
       </li>
     </ul>  

@@ -33,8 +33,13 @@
   }
 
   $(function () {
-    $("#slides").responsiveSlides({
+    $("#slides_home").responsiveSlides({
       // options
+    }).bind('rslides-before', onBefore);
+    
+    $("#slides").responsiveSlides({
+      auto: false,
+      nav: true
     }).bind('rslides-before', onBefore);
   });
 </script>
@@ -71,7 +76,7 @@
       <li><a href="/testimonials/" class="">Testimonials</a></li>
       <li><a href="/resources/" class="selected">Resources</a></li>
       <li><a href="/contact/" class="">Contact Us</a></li>
-      <li style="float:right;font-size:0.8375em;line-height:3.0em;color:#666;">(303) 449-3298 &bull; info@bw-construction.com</li>
+      <li style="float:right;font-size:0.8375em;line-height:2.625em;color:#666;">(303) 449-3298 &bull; info@bw-construction.com</li>
     </ul>
   </nav>
 </div>

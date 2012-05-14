@@ -33,8 +33,13 @@
   }
 
   $(function () {
-    $("#slides").responsiveSlides({
+    $("#slides_home").responsiveSlides({
       // options
+    }).bind('rslides-before', onBefore);
+    
+    $("#slides").responsiveSlides({
+      auto: false,
+      nav: true
     }).bind('rslides-before', onBefore);
   });
 </script>
