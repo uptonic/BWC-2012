@@ -58,10 +58,11 @@ nav {
         margin-left: -0.5em; }
     nav ul a:link,
     nav ul a:visited {
-      color: #666;
+      color: #888;
       display: block;
       padding: 0.5em;
-      text-decoration: none; }
+      text-decoration: none;
+      -webkit-transition: color 150ms ease-in-out; }
       nav ul a:link:hover, nav ul a:link:visited:hover,
       nav ul a:visited:hover,
       nav ul a:visited:visited:hover {
@@ -155,10 +156,14 @@ h1 {
   color: #000; }
 
 h2 {
-  font-size: 1.5em;
-  font-weight: 700;
-  color: #000;
+  font-size: 1.3333em;
+  font-weight: 400;
+  font-weight: normal;
+  color: #366;
+  text-align: center;
   margin-top: 0; }
+  h2 span {
+    color: #999; }
 
 h3 {
   font-size: 1.125em;
@@ -208,7 +213,7 @@ div.masthead {
         /*avoid flicker on load */ }
       div.masthead td:nth-of-type(2) h4 {
         margin: -0.2em 0 0.5em 0;
-        color: #930; }
+        color: #666; }
       div.masthead td:nth-of-type(2) h5 {
         margin: 0; }
     div.masthead td:last-of-type {
