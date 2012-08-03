@@ -312,6 +312,10 @@ div.masthead {
   }
 }
 
+body.home {
+  div.content p {margin-bottom:2.0em;}
+}
+
 body.gallery {
   div.content {
     div.kitchens figure img { background: #efefef url('/images/photos/kitchen.jpg') no-repeat scroll center top; }

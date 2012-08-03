@@ -233,6 +233,9 @@ div.masthead {
       div.masthead td:last-of-type img {
         float: right; }
 
+body.home div.content p {
+  margin-bottom: 2.0em; }
+
 body.gallery div.content div.kitchens figure img {
   background: #efefef url("/images/photos/kitchen.jpg") no-repeat scroll center top; }
 body.gallery div.content div.baths figure img {
