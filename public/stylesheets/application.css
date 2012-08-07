@@ -35,10 +35,9 @@ figure {
 header {
   margin-bottom: 2.0em; }
   header p {
-    margin: 0;
     font-size: 1.25em;
     line-height: 1.4em;
-    color: #666; }
+    color: #222; }
   header h1 {
     margin: 0 0 0.375em 0;
     font-size: 1.625em;
@@ -253,7 +252,7 @@ body.gallery div.content h2 {
 body.about div.content h3 {
   margin: 0; }
 body.about div.content h4 {
-  margin: 0; }
+  margin: 0 0 0.5em 0; }
 
 body.process figure,
 body.resources figure {

@@ -46,10 +46,9 @@ header {
   margin-bottom: 2.0em;
   
   p {
-    margin: 0;
     font-size: 1.25em;
     line-height: 1.4em;
-    color: #666;
+    color: #222;
   }
   
   h1 {
@@ -335,7 +334,7 @@ body.gallery {
 body.about {
   div.content {
     h3 { margin: 0; }
-    h4 { margin: 0; }
+    h4 { margin: 0 0 0.5em 0; }
   }
 }
 
