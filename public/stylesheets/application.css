@@ -33,9 +33,9 @@ figure {
     margin-bottom: 0; }
 
 header {
-  margin-bottom: 2.0em; }
+  /*margin-bottom: 2.0em;*/ }
   header p {
-    font-size: 1.25em;
+    font-size: 1.33em;
     line-height: 1.4em;
     color: #222; }
   header h1 {
@@ -188,6 +188,8 @@ p {
   line-height: 1.5em; }
   p:first-of-type {
     margin-top: 0; }
+  p:last-of-type {
+    margin-bottom: 0; }
 
 blockquote {
   line-height: 1.625em;
@@ -235,6 +237,11 @@ div.masthead {
 body.home div.content p {
   margin-bottom: 2.0em; }
 
+body.gallery div.content div figure figcaption {
+  padding: 0.625em 0 0 0;
+  background: white;
+  display: block;
+  font-size: 1.25em; }
 body.gallery div.content div.kitchens figure img {
   background: #efefef url("/images/photos/kitchen.jpg") no-repeat scroll center top; }
 body.gallery div.content div.baths figure img {
