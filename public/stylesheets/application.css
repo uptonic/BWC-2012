@@ -110,6 +110,11 @@ div.content {
       margin-top: 0; }
   div.content hr {
     height: 36px; }
+  div.content ul {
+    margin-top: 0; }
+    div.content ul li {
+      font-size: 1.125em;
+      line-height: 1.5em; }
 
 footer {
   padding: 10px 0 60px 0;
@@ -193,12 +198,12 @@ p {
 
 blockquote {
   line-height: 1.625em;
-  color: #808080;
-  margin: 0;
-  font-style: oblique;
-  font-size: 1.125em; }
+  color: #333;
+  margin: 0; }
   blockquote cite {
-    color: #b3b3b3; }
+    margin-top: 0.325em;
+    display: block;
+    color: #808080; }
 
 hr {
   background: transparent url("../images/divider_leaf.png") no-repeat scroll center center;

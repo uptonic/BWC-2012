@@ -147,6 +147,15 @@ div.content {
   }
   
   hr { height: 36px; }
+  
+  ul {
+    margin-top: 0;
+    
+    li {
+      font-size: 1.125em;
+      line-height: 1.5em;
+    }
+  }
 }
 
 footer {
@@ -259,12 +268,14 @@ p {
 
 blockquote {
   line-height: 1.625em;
-  color: #808080;
+  color: #333;
   margin: 0;
-  font-style: oblique;
-  font-size: 1.125em;
   
-  cite {color:#b3b3b3;}
+  cite {
+    margin-top: 0.325em;
+    display: block;
+    color: #808080;
+  }
 }
 
 hr {
