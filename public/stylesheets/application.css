@@ -33,12 +33,13 @@ figure {
     margin-bottom: 0; }
 
 header {
-  /*margin-bottom: 2.0em;*/ }
+  margin: 1.0em 0; }
   header p {
     font-size: 1.33em;
-    line-height: 1.4em;
-    color: #222; }
+    line-height: 1.5em;
+    font-family: "Merriweather", serif; }
   header h1 {
+    display: none;
     margin: 0 0 0.375em 0;
     font-size: 1.625em;
     color: #930; }
@@ -110,11 +111,6 @@ div.content {
       margin-top: 0; }
   div.content hr {
     height: 36px; }
-  div.content ul {
-    margin-top: 0; }
-    div.content ul li {
-      font-size: 1.125em;
-      line-height: 1.5em; }
 
 footer {
   padding: 10px 0 60px 0;
@@ -181,7 +177,7 @@ h3 {
 h4 {
   font-size: 1.125em;
   font-weight: 400;
-  color: #666; }
+  color: #366; }
 
 h5 {
   font-size: 0.9375em;
@@ -266,30 +262,39 @@ body.about div.content h3 {
 body.about div.content h4 {
   margin: 0 0 0.5em 0; }
 
-body.process figure,
-body.resources figure {
-  margin: 0 0 0.625em 0;
+body.process figure {
+  margin: 0;
   padding: 0;
   background-color: #366;
-  height: 2.0em;
-  width: 2.0em;
+  height: 1.825em;
+  width: 1.825em;
   text-align: center;
-  font-size: 2.0em;
+  font-size: 1.825em;
   font-weight: bold;
   color: white;
-  line-height: 2.0em;
+  line-height: 1.825em;
+  float: left;
   -webkit-border-radius: 2.0em;
   -moz-border-radius: 2.0em;
   border-radius: 2.0em;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none; }
+body.process section p {
+  font-size: 1.125em; }
+body.process section h3 {
+  margin: 0; }
+body.process section h4 {
+  margin: 0.125em 0 0.25em 0;
+  color: #666; }
 
-body.resources figure {
-  float: left; }
-body.resources article.resource {
-  margin-bottom: 2.0em;
-  padding-left: 5.0em; }
+body.resources section h3 {
+  color: #366; }
+body.resources section ul {
+  margin-top: 0;
+  font-size: 1.125em;
+  line-height: 1.5em;
+  color: #333; }
 
 /* Smaller screens */
 @media only screen and (max-width: 1023px) {

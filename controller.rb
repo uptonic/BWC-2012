@@ -44,11 +44,6 @@ before '/about/index.html.erb' do
   @nav_about = true
 end
 
-before '/process/index.html.erb' do
-  @body_class = "process"
-  @nav_process = true
-end
-
 before '/testimonials/index.html.erb' do
   @body_class = "testimonials"
   @nav_testimonials = true
@@ -57,6 +52,11 @@ end
 before '/resources/index.html.erb' do
   @body_class = "resources"
   @nav_resources = true
+end
+
+before '/process/index.html.erb' do
+  @body_class = "process"
+  @nav_process = true
 end
 
 before '/contact/index.html.erb' do
