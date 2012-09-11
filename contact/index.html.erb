@@ -2,3 +2,57 @@
   <h1>Contact</h1>
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 </header>
+
+<!-- ajax response -->
+<div id="log-wrapper">
+	<div id="log">
+		<!-- response goes here -->
+	</div>
+</div>
+
+<!-- submission form -->
+<form id="email-form" action="mailer.php" method="post">	
+	<div id="form-info">
+		<p>Please let us know where to send your selection, and don’t forget to give us your name and e-mail. We will send you a confirmation e-mail after receiving your selection.</p>
+	</div>
+	
+	<div id="form-table">
+		<table border="0" cellspacing="0" cellpadding="0">
+    	<tr id="size-row">
+    		<th>How'd you hear about us?</th>
+    		<td class="fields">
+    			<select name="referral">
+    				<option value="Mens S" selected="selected">Mens Small (S)</option>
+    				<option value="Mens M">Mens Medium (M)</option>
+    				<option value="Mens L">Mens Large (L)</option>
+    				<option value="Mens XL">Mens Large (XL)</option>
+    				<option value="Womens 8">Womens 8</option>
+    				<option value="Womens 10">Womens 10</option>
+    				<option value="Womens 12">Womens 12</option>
+    				<option value="Womens 14">Womens 14</option>
+    			</select>
+    		</td>
+    	</tr>
+    	<tr>
+    		<th>Your Name</th>
+    		<td class="fields"><input type="text" name="name" value="" /></td>
+    	</tr>
+    	<tr>
+    		<th>E-Mail Address</th>
+    		<td class="fields"><input type="text" name="email" value="" /></td>
+    	</tr>
+    	<tr>
+    		<th>Phone</th>
+    		<td class="fields"><input type="text" name="phone" value="" /></td>
+    	</tr>
+    	<tr>
+    		<th>Tell us about your project <span>(optional)</span></th>
+    		<td class="fields"><textarea name="comments" rows="3"></textarea></td>
+    	</tr>
+    	<tr>
+    		<th></th>
+    		<td class="fields"><input type="submit" name="button" id="submit-button" value="Submit Form" /></td>
+    	</tr>
+    </table>
+	</div>
+</form>

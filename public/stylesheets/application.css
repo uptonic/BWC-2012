@@ -238,20 +238,20 @@ div.masthead {
 body.home div.content p {
   margin-bottom: 2.0em; }
 
-body.gallery div.content div figure figcaption {
+body.gallery div.gallery_index div figure figcaption {
   padding: 0.625em 0 0 0;
   background: white;
   display: block;
   font-size: 1.25em; }
-body.gallery div.content div.kitchens figure img {
+body.gallery div.gallery_index div.kitchens figure img {
   background: #efefef url("/images/photos/kitchen.jpg") no-repeat scroll center top; }
-body.gallery div.content div.baths figure img {
+body.gallery div.gallery_index div.baths figure img {
   background: #efefef url("/images/photos/sample_3.jpg") no-repeat scroll center top; }
-body.gallery div.content div.exteriors figure img {
+body.gallery div.gallery_index div.exteriors figure img {
   background: #efefef url("/images/photos/sample_2.jpg") no-repeat scroll center top; }
-body.gallery div.content div.interiors figure img {
+body.gallery div.gallery_index div.interiors figure img {
   background: #efefef url("/images/photos/sample_1.jpg") no-repeat scroll center top; }
-body.gallery div.content h2 {
+body.gallery div.gallery_index h2 {
   font-family: 'Proxima Nova';
   color: #333;
   font-size: 1.5em;
@@ -302,18 +302,53 @@ body.resources section ul {
     font-size: 14px; }
 
   div.wrapper {
-    margin-left: 0; } }
+    margin-left: 0; }
+
+  body.resources section ul {
+    padding-left: 1.33em; } }
 /* Mobile */
 @media handheld, only screen and (max-width: 767px) {
   body {
     font-size: 12px;
     -webkit-text-size-adjust: none; }
 
-  nav ul {
-    font-size: 1.0em; }
+  figure.slideshow {
+    padding: 0.825em; }
+
+  nav {
+    display: none; }
+    nav ul {
+      font-size: 1.0em; }
+      nav ul li {
+        margin: 0 !important;
+        display: block;
+        text-align: center; }
+        nav ul li a:link,
+        nav ul li a:visited {
+          padding: 0.4em 0 !important; }
 
   div.masthead {
-    background: none; }
+    border-bottom: 1px solid #ccc;
+    background: none;
+    padding-bottom: 1.0em; }
+    div.masthead td {
+      vertical-align: middle; }
+      div.masthead td:first-of-type, div.masthead td:last-of-type {
+        display: none; }
+      div.masthead td:nth-of-type(2) {
+        vertical-align: middle;
+        padding: 0; }
+        div.masthead td:nth-of-type(2) h1,
+        div.masthead td:nth-of-type(2) h4 {
+          text-align: center;
+          white-space: normal; }
+        div.masthead td:nth-of-type(2) h1 {
+          line-height: 1.0em;
+          letter-spacing: -1px;
+          font-size: 1.825em;
+          margin: 0.5em 0 0.25em 0; }
+        div.masthead td:nth-of-type(2) h4 {
+          font-size: 1.125em; }
 
   .grid_1,
   .grid_2,

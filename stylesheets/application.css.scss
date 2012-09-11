@@ -323,7 +323,7 @@ body.home {
 }
 
 body.gallery {
-  div.content {
+  div.gallery_index {
     div figure figcaption {
       padding: 0.625em 0 0 0;
       background: rgba(255,255,255,1);
@@ -402,6 +402,14 @@ body.resources {
   div.wrapper {
     margin-left: 0;
   }
+  
+  body.resources {  
+    section {
+      ul {
+        padding-left: 1.33em;
+      }
+    }
+  }
 }
 
 
@@ -413,13 +421,67 @@ body.resources {
 	  -webkit-text-size-adjust: none;
 	}
 	
+	figure {
+    &.slideshow {
+      padding: 0.825em;
+    }
+  }
+	
 	nav {
-    ul { font-size: 1.0em; }
+	  display: none;
+	  
+    ul {
+      font-size: 1.0em;
+      
+      li {
+        margin: 0 !important;
+        display: block;
+        text-align: center;
+        
+        a:link,
+        a:visited {
+          padding: 0.4em 0 !important;
+        }
+      }
+    }
   }
 	
 	div.masthead {
-	  background: none;
-	}
+	  border-bottom: 1px solid #ccc;
+    background: none;
+    padding-bottom: 1.0em;
+
+    td {
+      vertical-align: middle;
+
+      &:first-of-type,
+      &:last-of-type {
+        display: none;
+      }
+
+      &:nth-of-type(2) {
+        vertical-align: middle;
+        padding: 0;
+
+        h1,
+        h4 {
+          text-align: center;
+          white-space: normal;
+        }
+        
+        h1 {
+          line-height: 1.0em;
+          letter-spacing: -1px;
+          font-size: 1.825em;
+          margin: 0.5em 0 0.25em 0;
+        }
+        
+        h4 {
+          font-size: 1.125em;
+        }
+      }
+    }
+  }
 	
 	.grid_1,
   .grid_2,

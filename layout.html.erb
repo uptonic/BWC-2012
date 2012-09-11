@@ -9,7 +9,7 @@
 <meta name="keywords" content="general contractor, builder, remodeler, contractor, fine home builder, boulder, colorado, co">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Merriweather:400,300,700|Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700" type="text/css">
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Merriweather:400,300,700" type="text/css">
 <link rel="stylesheet" href="/stylesheets/grid.css" type="text/css">
 <link rel="stylesheet" href="/stylesheets/normalize.css" type="text/css">
 <link rel="stylesheet" href="/stylesheets/fonts.css" type="text/css">
@@ -21,6 +21,7 @@
 <link rel="apple-touch-icon" sizes="114x114" href="/images/apple-touch-icon-114x114.png">
 
 <script src="/javascripts/jquery-1.7.2.min.js"></script>
+<script src="/javascripts/mailer.js"></script>
 <script src="/javascripts/responsiveslides.min.js"></script>
 
 <script>
@@ -47,7 +48,7 @@
 </head>
 
 <body class="<%= @body_class %>">
-<%= render '_header.html.erb' %>
+<header></header>
 
 <div class="wrapper">
   <div class="content clearfix">  
@@ -56,8 +57,6 @@
       <%= yield %>
     </div>
   </div>
-  
-  <%#= render '_footer.html.erb' %>
 </div>
 
 <!-- HTML5 IE Enabling Script -->
