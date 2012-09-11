@@ -92,14 +92,15 @@ $name.',
 Thank you for contacting BW Construction! Donna will be contacting you soon for more details about your project.
 
 ==================================================
+
 '.$name.'
 '.$phone.'
 '.$email.'
 
-About your project:
+ABOUT YOUR PROJECT
 '.$comments.'
 
-How did you hear about us?:
+HOW DID YOU HEAR ABOUT US?
 '.$referral.'
 
 ==================================================
