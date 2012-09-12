@@ -408,6 +408,37 @@ body.resources {
   }
 }
 
+body.contact {
+  form {
+    input[type=text],
+    textarea,
+    select {
+      width: 100%;
+    }
+
+    input[type=text],
+    textarea {
+      font-family: 'ProximaNova', sans-serif;
+      font-size: 1.0em;
+      box-sizing: border-box;
+      border-style: none;
+      border: 1px solid #ccc;
+      border-radius: 2px;
+      padding: 0.5em;
+    }
+    
+    select {
+      font-size: larger;
+    }
+    
+    p {
+      font-family: "Merriweather", serif;
+      line-height: 2.0em;
+      padding-bottom: 1.0em;
+    }
+  }
+}
+
 /* Smaller screens */
 @media only screen and (max-width: 1023px) {
   body {

@@ -302,6 +302,26 @@ body.resources section ul {
   line-height: 1.5em;
   color: #333; }
 
+body.contact form input[type=text],
+body.contact form textarea,
+body.contact form select {
+  width: 100%; }
+body.contact form input[type=text],
+body.contact form textarea {
+  font-family: 'ProximaNova', sans-serif;
+  font-size: 1.0em;
+  box-sizing: border-box;
+  border-style: none;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  padding: 0.5em; }
+body.contact form select {
+  font-size: larger; }
+body.contact form p {
+  font-family: "Merriweather", serif;
+  line-height: 2.0em;
+  padding-bottom: 1.0em; }
+
 /* Smaller screens */
 @media only screen and (max-width: 1023px) {
   body {
