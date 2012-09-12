@@ -79,61 +79,73 @@
       <li><a href="/process/" class="">Process</a></li>
       <li><a href="/resources/" class="">Resources</a></li>
       <li><a href="/contact/" class="selected">Contact Us</a></li>
-      <li style="float:right;font-size:0.8375em;line-height:2.625em;color:#666;">(303) 449-3298 &bull; info@bw-construction.com</li>
+      <li style="float:right;font-size:0.8375em;line-height:2.625em;color:#666;">Phone: (303) 449-3298</li>
     </ul>
   </nav>
 </div>
       <header class="grid_12 cleafix">
   <h1>Contact</h1>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <p>We'd love to work with you. First, tell us a bit about yourself and your project. We'll follow up soon with a phone call to discuss your project in-depth and walk you through our process.</p>
 </header>
 
-<!-- ajax response -->
-<div id="log-wrapper">
-	<div id="log">
-		<!-- response goes here -->
-	</div>
+<div class="clear">&nbsp;</div><hr>
+
+<div class="grid_12">
+  <!-- ajax response -->
+  <div id="log-wrapper">
+  	<div id="log">
+  		<!-- response goes here -->
+  	</div>
+  </div>
+
+  <!-- submission form -->
+  <form id="email-form" action="mailer.php" method="post">
+  	<table border="0" cellspacing="0" cellpadding="0">
+    	<tr>
+    		<th>Your Name</th>
+    		<td class="fields"><input type="text" name="name" value="" /></td>
+    	</tr>
+    	<tr>
+    		<th>E-Mail Address</th>
+    		<td class="fields"><input type="text" name="email" value="" /></td>
+    	</tr>
+    	<tr>
+    		<th>Phone</th>
+    		<td class="fields"><input type="text" name="phone" value="" /></td>
+    	</tr>
+    	<tr>
+    		<th>Tell us about your project <span>(optional)</span></th>
+    		<td class="fields"><textarea name="comments" rows="3"></textarea></td>
+    	</tr>
+    	<tr id="size-row">
+    		<th>How'd you hear about us?</th>
+    		<td class="fields">
+    			<select name="referral">
+    				<option value="" selected="selected">Please select...</option>
+    				<option value="A friend recommended you">A friend recommended you</option>
+    				<option value="Saw your truck in town">Saw your truck in town</option>
+    				<option value="Grabbed one of your flyers">Grabbed one of your flyers</option>
+    				<option value="Yellow Pages">Yellow Pages</option>
+    				<option value="Web search">Web search</option>
+    				<option value="Other">Other</option>
+    			</select>
+    		</td>
+    	</tr>
+    	<tr>
+    		<th></th>
+    		<td class="fields"><input type="submit" name="button" id="submit-button" value="Submit Form" /></td>
+    	</tr>
+    </table>
+  </form>
 </div>
 
-<!-- submission form -->
-<form id="email-form" action="mailer.php" method="post">
-	<table border="0" cellspacing="0" cellpadding="0">
-  	<tr>
-  		<th>Your Name</th>
-  		<td class="fields"><input type="text" name="name" value="" /></td>
-  	</tr>
-  	<tr>
-  		<th>E-Mail Address</th>
-  		<td class="fields"><input type="text" name="email" value="" /></td>
-  	</tr>
-  	<tr>
-  		<th>Phone</th>
-  		<td class="fields"><input type="text" name="phone" value="" /></td>
-  	</tr>
-  	<tr>
-  		<th>Tell us about your project <span>(optional)</span></th>
-  		<td class="fields"><textarea name="comments" rows="3"></textarea></td>
-  	</tr>
-  	<tr id="size-row">
-  		<th>How'd you hear about us?</th>
-  		<td class="fields">
-  			<select name="referral">
-  				<option value="" selected="selected">Please select...</option>
-  				<option value="A friend recommended you">A friend recommended you</option>
-  				<option value="Saw your truck in town">Saw your truck in town</option>
-  				<option value="Grabbed one of your flyers">Grabbed one of your flyers</option>
-  				<option value="Yellow Pages">Yellow Pages</option>
-  				<option value="Web search">Web search</option>
-  				<option value="Other">Other</option>
-  			</select>
-  		</td>
-  	</tr>
-  	<tr>
-  		<th></th>
-  		<td class="fields"><input type="submit" name="button" id="submit-button" value="Submit Form" /></td>
-  	</tr>
-  </table>
-</form>
+<div class="clear">&nbsp;</div><hr>
+
+<div class="grid_12">
+  <blockquote>
+    &quot;Thanks again for a wonderful building experience! I can't think of anyone else I would turn my house/life over to and leave the state. For the whole summer. Again.&quot; <cite>&ndash; L. Edwards</cite>
+  </blockquote>
+</div>
     </div>
   </div>
 </div>

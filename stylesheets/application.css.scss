@@ -43,7 +43,7 @@ figure {
 }
 
 header {
-  margin: 1.0em 0;
+  margin: 0.25em 0;
 
   p {
     font-size: 1.33em;
@@ -99,19 +99,14 @@ nav {
 }
 
 aside {
-  /*background-color: rgba(204,102,0,0.2);
-    padding: 20px 20px 15px 20px;
-    -webkit-border-radius: 6px;
-       -moz-border-radius: 6px;
-            border-radius: 6px;*/
-
-  padding: 10px 0 0 10px;
+  padding: 20px 0 0 10px;
   font-family: 'Merriweather', serif;
   
   ul {
     font-size: 0.875em;
     padding: 0 1.25em;
     color: #fff;
+    opacity: 0.8;
     
     li {
       margin-bottom: 8px;
@@ -126,6 +121,12 @@ aside {
     font-weight: normal;
     color: #fff;
     margin: 0;
+  }
+  
+  h4 {
+    font-size: 1.0em;
+    color: #fff;
+    margin: 0 0 1.25em 0;
   }
 }
 
@@ -146,8 +147,6 @@ div.content {
     margin: 0 0 0.33em 0;
     & + p { margin-top: 0; }
   }
-  
-  hr { height: 36px; }
 }
 
 footer {
@@ -218,11 +217,10 @@ h1 {
 }
 
 h2 {
-  font-size: 1.3333em;
+  font-size: 1.67em;
   font-weight: 400;
   font-weight: normal;
   color: #366;
-  text-align: center;
   margin-top: 0;
   
   span {color:#999;}
@@ -273,8 +271,10 @@ blockquote {
 hr {
   background: transparent url('../images/divider_leaf.png') no-repeat scroll center center;
   display: block;
-  height: 14px;
+  height: 36px;
   border: none;
+  margin-left: 1%;
+  margin-right: 1%;
 }
 
 div.masthead {
@@ -320,6 +320,11 @@ div.masthead {
 
 body.home {
   div.content p {margin-bottom:2.0em;}
+  
+  div.slideshow_wrapper {
+    background-color: rgba(153,51,0,0.8);
+    margin-bottom: 2.0em;
+  }
 }
 
 body.gallery {
@@ -348,7 +353,17 @@ body.gallery {
 body.about {
   div.content {
     h3 { margin: 0; }
-    h4 { margin: 0 0 0.5em 0; }
+    
+    h4 {
+      margin: 0 0 0.5em 0;
+      color: #666;
+    }
+  }
+}
+
+body.testimonials {
+  figure {
+    margin-bottom: 0;
   }
 }
 
