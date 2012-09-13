@@ -423,8 +423,27 @@ body.contact {
       box-sizing: border-box;
       border-style: none;
       border: 1px solid #ccc;
-      border-radius: 2px;
       padding: 0.5em;
+      -webkit-border-radius: 2px;
+         -moz-border-radius: 2px;
+              border-radius: 2px;
+    }
+    
+    input[type=submit] {
+      margin-top: 1.0em;
+      background-color: rgba(0,0,0,0.1);
+      border: 2px solid #ccc;
+      font-size: 1.125em;
+      padding: 0.5em 2.0em;
+      font-family: 'ProximaNova', sans-serif;
+      vertical-align: baseline;
+      -webkit-appearance: none;
+      -webkit-box-shadow: none;
+         -moz-box-shadow: none;
+              box-shadow: none;
+      -webkit-border-radius: 3px;
+         -moz-border-radius: 3px;
+              border-radius: 3px;
     }
     
     select {
@@ -435,6 +454,29 @@ body.contact {
       font-family: "Merriweather", serif;
       line-height: 2.0em;
       padding-bottom: 1.0em;
+      
+      > span {
+        color: #930;
+      }
+    }
+    
+    div#log {
+      display: none;
+      
+      > div {
+        margin-bottom: 1.5em;
+        padding: 0.825em 1.5em;
+        border: 2px solid #cc8f52;
+        background-color: rgba(204,102,0,0.33);
+        -webkit-border-radius: 3px;
+           -moz-border-radius: 3px;
+                border-radius: 3px;
+
+        &.success {
+          background-color: rgba(90,150,150,0.33);
+          border: 2px solid #5a9696;
+        }
+      }
     }
   }
 }
