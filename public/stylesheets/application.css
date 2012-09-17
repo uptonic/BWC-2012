@@ -41,8 +41,10 @@ header {
   header h1 {
     display: none;
     margin: 0 0 0.375em 0;
-    font-size: 1.625em;
-    color: #930; }
+    font-size: 1.625em; }
+    header h1 span {
+      font-size: 0.625em;
+      color: #666; }
 
 nav {
   border-top: 1px solid rgba(0, 0, 0, 0.15);
@@ -246,18 +248,21 @@ body.gallery div.gallery_index div figure figcaption {
   display: block;
   font-size: 1.25em; }
 body.gallery div.gallery_index div.kitchens figure img {
-  background: #efefef url("/images/photos/kitchen.jpg") no-repeat scroll center top; }
+  background: #efefef url("/images/photos/gallery_kitchens.jpg") no-repeat scroll center top; }
 body.gallery div.gallery_index div.baths figure img {
-  background: #efefef url("/images/photos/sample_3.jpg") no-repeat scroll center top; }
+  background: #efefef url("/images/photos/gallery_baths.jpg") no-repeat scroll -20px top; }
 body.gallery div.gallery_index div.exteriors figure img {
-  background: #efefef url("/images/photos/sample_2.jpg") no-repeat scroll center top; }
+  background: #efefef url("/images/photos/gallery_exteriors.jpg") no-repeat scroll -310px -240px; }
 body.gallery div.gallery_index div.interiors figure img {
-  background: #efefef url("/images/photos/sample_1.jpg") no-repeat scroll center top; }
+  background: #efefef url("/images/photos/gallery_interiors.jpg") no-repeat scroll center top; }
 body.gallery div.gallery_index h2 {
   font-family: 'Proxima Nova';
   color: #333;
   font-size: 1.5em;
   margin: 0 0 0.5em 0; }
+body.gallery header.gallery h1 {
+  display: block;
+  margin-bottom: 0.5em; }
 
 body.about div.content h3 {
   margin: 0; }

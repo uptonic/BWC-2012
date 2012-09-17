@@ -55,7 +55,11 @@ header {
     display: none;
     margin: 0 0 0.375em 0;
     font-size: 1.625em;
-    color: #930;
+    
+    span {
+      font-size: 0.625em;
+      color: #666;
+    }
   }
 }
 
@@ -336,10 +340,10 @@ body.gallery {
       font-size: 1.25em;
     }
     
-    div.kitchens figure img { background: #efefef url('/images/photos/kitchen.jpg') no-repeat scroll center top; }
-    div.baths figure img { background: #efefef url('/images/photos/sample_3.jpg') no-repeat scroll center top; }
-    div.exteriors figure img { background: #efefef url('/images/photos/sample_2.jpg') no-repeat scroll center top; }
-    div.interiors figure img { background: #efefef url('/images/photos/sample_1.jpg') no-repeat scroll center top; }
+    div.kitchens figure img { background: #efefef url('/images/photos/gallery_kitchens.jpg') no-repeat scroll center top; }
+    div.baths figure img { background: #efefef url('/images/photos/gallery_baths.jpg') no-repeat scroll -20px top; }
+    div.exteriors figure img { background: #efefef url('/images/photos/gallery_exteriors.jpg') no-repeat scroll -310px -240px; }
+    div.interiors figure img { background: #efefef url('/images/photos/gallery_interiors.jpg') no-repeat scroll center top; }
 
     h2 {
       font-family: 'Proxima Nova';
@@ -347,6 +351,11 @@ body.gallery {
       font-size: 1.5em;
       margin: 0 0 0.5em 0;
     }
+  }
+  
+  header.gallery h1 {
+    display: block;
+    margin-bottom: 0.5em;
   }
 }
 
