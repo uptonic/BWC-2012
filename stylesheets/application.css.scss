@@ -103,7 +103,7 @@ nav {
 }
 
 aside {
-  padding: 20px 0 0 10px;
+  padding: 20px 0 0 5px;
   font-family: 'Merriweather', serif;
   
   ul {
@@ -466,6 +466,22 @@ body.contact {
       
       > span {
         color: #930;
+      }
+    }
+    
+    aside {
+      padding: 20px 30px;
+      background-color: rgba(0,0,0,0.1);
+      -webkit-border-radius: 6px;
+         -moz-border-radius: 6px;
+              border-radius: 6px;
+              
+      p {
+        line-height: 1.66em;
+      }
+      
+      a {
+        color: inherit;
       }
     }
     

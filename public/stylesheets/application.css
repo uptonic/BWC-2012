@@ -75,7 +75,7 @@ nav {
         font-weight: bold; }
 
 aside {
-  padding: 20px 0 0 10px;
+  padding: 20px 0 0 5px;
   font-family: 'Merriweather', serif; }
   aside ul {
     font-size: 0.875em;
@@ -345,6 +345,16 @@ body.contact form p {
   padding-bottom: 1.0em; }
   body.contact form p > span {
     color: #930; }
+body.contact form aside {
+  padding: 20px 30px;
+  background-color: rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px; }
+  body.contact form aside p {
+    line-height: 1.66em; }
+  body.contact form aside a {
+    color: inherit; }
 body.contact form div#log {
   display: none; }
   body.contact form div#log > div {

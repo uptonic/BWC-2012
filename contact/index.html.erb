@@ -7,75 +7,76 @@
 
 <!-- submission form -->
 <form id="email-form" action="mailer.php" method="post">
-  <div class="grid_12">
-    <!-- ajax response -->
-    <div id="log-wrapper">
-    	<div id="log">
-    		<!-- response goes here -->
-    	</div>
+  <div class="grid_8">
+    <div class="grid_12 alpha omega">
+      <!-- ajax response -->
+      <div id="log-wrapper">
+      	<div id="log">
+      		<!-- response goes here -->
+      	</div>
+      </div>
+    </div>
+    
+    <div class="grid_12 alpha omega">
+      <p>
+        Your name <span>*</span>
+        <input type="text" name="name" value="" />
+      </p>
+    </div>
+
+    <div class="grid_6 alpha">
+      <p>
+        Email <span>*</span>
+        <input type="text" name="email" value="" />
+      </p>
+    </div>
+
+    <div class="grid_6 omega">
+      <p>
+        Phone <span>*</span>
+        <input type="text" name="phone" value="" />
+      </p>
+    </div>
+
+    <div class="grid_12 alpha omega">
+      <p>
+        Tell us about your project
+        <textarea name="comments" rows="6"></textarea>
+      </p>
+    </div>
+
+    <div class="grid_12 alpha omega">
+      <p>
+        How did you hear about us?
+        <select name="referral">
+      		<option value="" selected="selected">Please select...</option>
+      		<option value="A friend recommended you">A friend recommended you</option>
+      		<option value="Saw your truck in town">Saw your truck in town</option>
+      		<option value="Grabbed one of your flyers">Grabbed one of your flyers</option>
+      		<option value="Yellow Pages">Yellow Pages</option>
+      		<option value="Web search">Web search</option>
+      		<option value="Other">Other</option>
+      	</select>
+      </p>
+    </div>
+
+    <div class="grid_12 alpha omega">
+      <p><input type="submit" name="button" id="submit-button" value="Send your request" /></p>
     </div>
   </div>
   
   <div class="grid_4">
-    <p>
-      Your name <span>*</span>
-      <input type="text" name="name" value="" />
-    </p>
-  </div>
-  
-  <div class="clear">&nbsp;</div>
-  
-  <div class="grid_4">
-    <p>
-      Email <span>*</span>
-      <input type="text" name="email" value="" />
-    </p>
-  </div>
-  
-  <div class="grid_4">
-    <p>
-      Phone <span>*</span>
-      <input type="text" name="phone" value="" />
-    </p>
-  </div>
-  
-  <div class="clear">&nbsp;</div>
-  
-  <div class="grid_8">
-    <p>
-      Tell us about your project
-      <textarea name="comments" rows="6"></textarea>
-    </p>
-  </div>
-  
-  <div class="clear">&nbsp;</div>
-  
-  <div class="grid_4">
-    <p>
-      How did you hear about us?
-      <select name="referral">
-    		<option value="" selected="selected">Please select...</option>
-    		<option value="A friend recommended you">A friend recommended you</option>
-    		<option value="Saw your truck in town">Saw your truck in town</option>
-    		<option value="Grabbed one of your flyers">Grabbed one of your flyers</option>
-    		<option value="Yellow Pages">Yellow Pages</option>
-    		<option value="Web search">Web search</option>
-    		<option value="Other">Other</option>
-    	</select>
-    </p>
-  </div>
-  
-  <div class="clear">&nbsp;</div>
-
-  <div class="grid_8">
-    <p><input type="submit" name="button" id="submit-button" value="Send your request" /></p>
+    <aside>
+      <p>
+        <strong>BW Construction</strong><br>
+        3067 10th Street<br>
+        Boulder, CO 80304
+      </p>
+      <p>
+        303-449-3298 (phone)<br>
+        303-245-6073 (fax)<br>
+        <a href="mailto:info@bw-construction.com">info@bw-construction.com</a>
+      </p>
+    </aside>
   </div>
 </form>
-
-<div class="clear">&nbsp;</div><hr>
-
-<div class="grid_12">
-  <blockquote>
-    &quot;It has been such a pleasure working with you all-again. This could have been a very stressful project, but I was confident, right from the start, that it would turn out fine.  I just let you do all of the stressing! It has really been refreshing working with someone with such high standards, especially after what we went through with our home builder, Mr. Excuses.&quot; <cite>&ndash; N. Callahan (lower level remodel)</cite>
-  </blockquote>
-</div>
