@@ -21,6 +21,7 @@
 <link rel="apple-touch-icon" sizes="114x114" href="/images/apple-touch-icon-114x114.png">
 
 <script src="/javascripts/jquery-1.7.2.min.js"></script>
+<script src="/javascripts/application.js"></script>
 <script src="/javascripts/mailer.js"></script>
 <script src="/javascripts/responsiveslides.min.js"></script>
 
@@ -70,21 +71,30 @@
       <div class="masthead grid_12 clearfix">
   <table border="0" cellspacing="0" cellpadding="0">
     <tr>
-      <td>
+      <td data-behavior="mobile-hide">
         <a href="/"><img src="/images/logo_no_date.png"></a>
       </td>
       <td>
-        <!-- <div style="width:30%;margin:1.0em auto;"><img src="/images/logo_no_date.png"></div> -->
+        <div class="logo" data-behavior="mobile-show">
+          <a href="/"><img src="/images/logo_no_date.png"></a>
+        </div>
+        
         <h1>BW Construction of Boulder</h1>
         <h4>Remodeler &amp; General Contractor since 1989</h4>
+        
+        <div class="mobile_nav" data-behavior="mobile-show">
+          <!-- mobile navigation injected here -->
+        </div>
       </td>
-      <td>
+      <td data-behavior="mobile-hide">
         <img src="/images/donna_and_randy.png" alt="">
       </td>
     </tr>
   </table>
   
-  <nav>
+  <nav data-behavior="mobile-hide">
+    <span>(303) 449-3298 &bull; <a href="mailto:info@bw-construction.com">Email us</a></span>
+    
     <ul>
       <li><a href="/" class="">Home</a></li>
       <li><a href="/gallery/" class="">Gallery</a></li>
@@ -93,7 +103,6 @@
       <li><a href="/process/" class="">Process</a></li>
       <li><a href="/resources/" class="selected">Resources</a></li>
       <li><a href="/contact/" class="">Contact Us</a></li>
-      <li style="float:right;font-size:0.8375em;line-height:2.625em;color:#666;">(303) 449-3298 &bull; <a href="mailto:info@bw-construction.com" style="display:inline;color:inherit;margin:0;padding:0;">Email us</a></li>
     </ul>
   </nav>
 </div>
