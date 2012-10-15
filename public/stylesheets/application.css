@@ -262,6 +262,8 @@ body.about div.content article {
 
 body.testimonials figure {
   margin-bottom: 0; }
+body.testimonials div.clear.padded {
+  padding: 1.25em 0; }
 
 body.process figure {
   margin: 0;
@@ -313,12 +315,14 @@ body.contact form textarea {
   -moz-border-radius: 2px;
   border-radius: 2px; }
 body.contact form input[type=submit] {
-  margin-top: 1.0em;
-  background-color: rgba(0, 0, 0, 0.1);
-  border: 2px solid #ccc;
+  margin: 1.0em 0 2.0em 0;
+  background-color: rgba(51, 102, 102, 0.8);
+  color: white;
+  border: 1px solid #366;
   font-size: 1.125em;
-  padding: 0.5em 2.0em;
+  padding: 0.667em 2.0em;
   font-family: 'ProximaNova', sans-serif;
+  font-weight: bold;
   vertical-align: baseline;
   -webkit-appearance: none;
   -webkit-box-shadow: none;
@@ -465,8 +469,11 @@ div[data-behavior~=mobile-hide] {
     body.home aside h4 {
       margin: 0; }
 
+  body.testimonials div.grid_2 {
+    text-align: center; }
   body.testimonials figure {
-    margin-bottom: 1.0em; }
+    margin-bottom: 1.25em;
+    display: inline-block; }
 
   body.process div.grid_1 {
     min-width: 3.0em; }
@@ -482,6 +489,8 @@ div[data-behavior~=mobile-hide] {
   body.contact div.grid_6,
   body.contact div.grid_4 {
     width: 98% !important; }
+  body.contact form input[type=submit] {
+    width: 100%; }
 
   div.gallery_index figure img {
     height: 100px;

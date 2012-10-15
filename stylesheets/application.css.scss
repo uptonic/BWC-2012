@@ -356,9 +356,8 @@ body.about {
 }
 
 body.testimonials {
-  figure {
-    margin-bottom: 0;
-  }
+  figure { margin-bottom: 0; }
+  div.clear.padded { padding: 1.25em 0; }
 }
 
 body.process {
@@ -424,12 +423,14 @@ body.contact {
     }
     
     input[type=submit] {
-      margin-top: 1.0em;
-      background-color: rgba(0,0,0,0.1);
-      border: 2px solid #ccc;
+      margin: 1.0em 0 2.0em 0;
+      background-color: rgba(51,102,102,0.8);
+      color: white;
+      border: 1px solid #366;
       font-size: 1.125em;
-      padding: 0.5em 2.0em;
+      padding: 0.667em 2.0em;
       font-family: 'ProximaNova', sans-serif;
+      font-weight: bold;
       vertical-align: baseline;
       -webkit-appearance: none;
       -webkit-box-shadow: none;
@@ -631,8 +632,11 @@ div[data-behavior~=mobile-hide] {display: block;}
   }
   
   body.testimonials {
+    div.grid_2 { text-align: center; }
+    
     figure {
-      margin-bottom: 1.0em;
+      margin-bottom: 1.25em;
+      display: inline-block;
     }
   }
   
@@ -656,6 +660,12 @@ div[data-behavior~=mobile-hide] {display: block;}
     div.grid_6,
     div.grid_4 {
       width: 98% !important;
+    }
+    
+    form {
+      input[type=submit] {
+        width: 100%;
+      }
     }
   }
   
