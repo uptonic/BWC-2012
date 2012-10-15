@@ -70,9 +70,9 @@ nav {
   border-bottom: 1px solid rgba(0,0,0,0.15);
   
   > span {
-    font-size: 1.0em;
+    font-size: 0.9em;
     float: right;
-    padding: 0.5em 0;
+    padding: 0.667em 0 0 0;
   }
   
   ul {
@@ -162,54 +162,20 @@ div.content {
 }
 
 footer {
-  padding: 10px 0 60px 0;
-  border-top: 10px solid #7f8178;
-  background: #a4a79d url('/images/bkd_mesh_brown.jpg') repeat scroll top left;
+  color: #808080;
+  font-size: 0.9em;
+  padding: 2.0em 1.0em;
+  text-align: center;
   
-  p {
-    font-size: 1.125em;
+  ul {
+    list-style: none;
+    margin: 0 0 0 -0.5em;
+    padding: 0;
   }
   
-  h2 {
-    color: #fff;
-  }
-  
-  table {
-    width: 100%;
-    
-    tr.padded {
-      td:first-of-type { padding-right: 10px; }
-      td:last-of-type { padding-left: 10px; }
-    }
-    
-    td {
-      padding: 10px 0;
-      
-      label {
-        font-weight: bold;
-        color: #4b4c48;
-        margin: 0 0 5px 0;
-        display: block;
-      }
-      
-      input[type=text],
-      textarea {
-        font-family: 'ProximaNova', sans-serif;
-        font-size: 1.125em;
-        color: #fff;
-        border: none;
-        width: 100%;
-        padding: 10px;
-        background-color: rgba(0,0,0,0.15);
-        -webkit-box-sizing: border-box;
-           -moz-box-sizing: border-box;
-                box-sizing: border-box;
-      }
-      
-      textarea {
-        height: 200px;
-      }
-    }
+  li {
+    display: inline-block;
+    margin: 0 0.5em;
   }
 }
 
@@ -722,6 +688,10 @@ div[data-behavior~=mobile-hide] {display: block;}
     &.slideshow {
       padding: 0.825em;
     }
+  }
+  
+  footer li {
+    display: block;
   }
   
   div.clear.padded {
