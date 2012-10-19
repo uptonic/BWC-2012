@@ -442,11 +442,8 @@ body.contact form div#log {
       background: rgba(0, 0, 0, 0.8); }
 
 /* Hide mobile-specific content by default */
-div[data-behavior~=mobile-show] {
+[data-behavior~=mobile-show] {
   display: none; }
-
-div[data-behavior~=mobile-hide] {
-  display: block; }
 
 /* Smaller screens */
 @media only screen and (max-width: 1023px) {
@@ -458,6 +455,12 @@ div[data-behavior~=mobile-hide] {
 
   body.resources section ul {
     padding-left: 1.33em; } }
+/* Portrait tablets */
+@media handheld, only screen and (max-width: 860px) {
+  body.home aside h4 {
+    font-size: 0.9em; }
+  body.home li[data-behavior~=tablet-hide] {
+    display: none; } }
 /* Mobile */
 @media handheld, only screen and (max-width: 767px) {
   body {
@@ -465,9 +468,11 @@ div[data-behavior~=mobile-hide] {
     -webkit-text-size-adjust: none; }
 
   body.home aside {
-    padding: 1.0em; }
+    padding: 1.0em 1.0em 0; }
     body.home aside h4 {
       margin: 0; }
+  body.home li[data-behavior~=tablet-hide] {
+    display: list-item; }
 
   body.testimonials div.grid_2 {
     text-align: center; }

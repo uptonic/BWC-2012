@@ -592,8 +592,7 @@ body.contact {
 }
 
 /* Hide mobile-specific content by default */
-div[data-behavior~=mobile-show] {display: none;}
-div[data-behavior~=mobile-hide] {display: block;}
+[data-behavior~=mobile-show] {display: none;}
 
 /* Smaller screens */
 @media only screen and (max-width: 1023px) {
@@ -614,6 +613,16 @@ div[data-behavior~=mobile-hide] {display: block;}
   }
 }
 
+/* Portrait tablets */
+@media handheld, only screen and (max-width: 860px) {
+  body.home {
+    aside {      
+      h4 {font-size:0.9em;}
+    }
+    
+    li[data-behavior~=tablet-hide] {display:none;}
+  }
+}
 
 /* Mobile */
 @media handheld, only screen and (max-width: 767px) {
@@ -625,10 +634,12 @@ div[data-behavior~=mobile-hide] {display: block;}
 	
 	body.home {
     aside {
-      padding: 1.0em;
+      padding: 1.0em 1.0em 0;
       
       h4 {margin:0;}
     }
+    
+    li[data-behavior~=tablet-hide] {display:list-item;}
   }
   
   body.testimonials {
