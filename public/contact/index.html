@@ -27,24 +27,16 @@
 <script src="/javascripts/responsiveslides.min.js"></script>
 
 <script>
-  function onBefore() {
-    console.log("Animation started.");
-  }
-  
-  function onAfter() {
-    console.log("Animation ended.");
-  }
-
   $(function () {
     $("#slides_home").responsiveSlides({
       // options
-    }).bind('rslides-before', onBefore);
+    });
     
     $("#slides").responsiveSlides({
       pager: true,
       auto: false,
       nav: true
-    }).bind('rslides-before', onBefore);
+    });
   });
 </script>
 
