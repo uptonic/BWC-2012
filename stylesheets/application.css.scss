@@ -1,12 +1,12 @@
 html {}
 
 body {
-  background: #f2f3ed url('/images/bkd_diagonal_tan.jpg') repeat fixed top left;  
+  background: #f2f3ed url('/images/bkd_diagonal_tan.jpg') repeat fixed top left;
   font-family: 'ProximaNova', sans-serif;
   font-weight: 400;
   color: #333;
   padding-top: 10px;
-  
+
   > header {
     position: fixed;
     z-index: 1000;
@@ -35,12 +35,12 @@ figure {
   -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.3);
      -moz-box-shadow: 0 0 10px rgba(0,0,0,0.3);
           box-shadow: 0 0 10px rgba(0,0,0,0.3);
-          
+
   &.slideshow {
     padding: 1.25em;
     margin-bottom: 0;
   }
-  
+
   > img {margin: 0 auto;}
 }
 
@@ -52,12 +52,12 @@ header {
     line-height: 1.5em;
     font-family: "Merriweather", serif;
   }
-  
+
   h1 {
     display: none;
     margin: 0 0 0.375em 0;
     font-size: 1.625em;
-    
+
     span {
       font-size: 0.625em;
       color: #666;
@@ -68,27 +68,27 @@ header {
 nav {
   border-top: 1px solid rgba(0,0,0,0.15);
   border-bottom: 1px solid rgba(0,0,0,0.15);
-  
+
   > span {
     font-size: 0.9em;
     float: right;
     padding: 0.667em 0 0 0;
   }
-  
+
   ul {
     padding: 0;
     margin: 0;
     width: 100%;
     list-style: none;
-    
+
     li {
       display: inline-block;
-      
+
       &:first-of-type {
         margin-left: -0.5em;
       }
     }
-    
+
     a:link,
     a:visited {
       color: #888;
@@ -96,12 +96,12 @@ nav {
       padding: 0.5em;
       text-decoration: none;
       -webkit-transition: color 150ms ease-in-out;
-      
+
       &:hover,
       &:visited:hover {
         color: #000;
       }
-      
+
       &.selected {
         color: #000;
         font-weight: bold;
@@ -113,28 +113,28 @@ nav {
 aside {
   padding: 20px 0 0 5px;
   font-family: 'Merriweather', serif;
-  
+
   ul {
     font-size: 0.875em;
     padding: 0 1.25em;
     color: #fff;
     opacity: 0.8;
-    
+
     li {
       margin-bottom: 8px;
       color: #ccc;
-      
+
       span { color: #fff; }
     }
   }
-  
+
   h3 {
     font-size: 1.25em;
     font-weight: normal;
     color: #fff;
     margin: 0;
   }
-  
+
   h4 {
     font-size: 1.0em;
     color: #fff;
@@ -146,15 +146,14 @@ div.clear.padded {
   padding: 1.25em 0;
 }
 
-div.content,
-footer > div.inner {
+div.content {
   max-width: 1040px;
 }
 
 div.content {
   margin: 0 auto;
   padding-bottom: 3.0em;
-  
+
   h3 {
     margin: 0 0 0.33em 0;
     & + p { margin-top: 0; }
@@ -166,16 +165,20 @@ footer {
   font-size: 0.9em;
   padding: 2.0em 1.0em;
   text-align: center;
-  
+
   ul {
     list-style: none;
-    margin: 0 0 0 -0.5em;
+    margin: 0 0 2.0em -0.5em;
     padding: 0;
   }
-  
+
   li {
     display: inline-block;
     margin: 0 0.5em;
+  }
+
+  p {
+    a {display:inline-block;}
   }
 }
 
@@ -200,7 +203,7 @@ h2 {
   font-weight: normal;
   color: #366;
   margin-top: 0;
-  
+
   span {color:#999;}
 }
 
@@ -224,11 +227,11 @@ h5 {
 p {
   font-size: 0.9375em;
   line-height: 1.5em;
-  
+
   &:first-of-type {
     margin-top: 0;
   }
-  
+
   &:last-of-type {
     margin-bottom: 0;
   }
@@ -238,7 +241,7 @@ blockquote {
   line-height: 1.625em;
   color: #333;
   margin: 0;
-  
+
   cite {
     margin-top: 0.325em;
     display: block;
@@ -257,21 +260,21 @@ hr {
 
 div.masthead {
   margin-bottom: 1.5em;
-  
+
   td {
     vertical-align: middle;
-    
+
     &:first-of-type {
       width: 11%;
       img { float: left; }
     }
-    
+
     &:nth-of-type(2) {
       width: 65%;
       vertical-align: middle;
       padding-left: 0.825em;
       padding-top: 0.5em;
-      
+
       h1 {
         margin: 0;
         white-space: nowrap; /*avoid flicker on load */
@@ -281,12 +284,12 @@ div.masthead {
         margin: -0.2em 0 0.5em 0;
         color: #666;
       }
-      
+
       h5 {
         margin: 0;
       }
     }
-    
+
     &:last-of-type {
       width: 25%;
       vertical-align: bottom;
@@ -298,7 +301,7 @@ div.masthead {
 
 body.home {
   div.content p {margin-bottom:2.0em;}
-  
+
   div.slideshow_wrapper {
     background-color: rgba(153,51,0,0.8);
     margin-bottom: 2.0em;
@@ -313,7 +316,7 @@ body.gallery {
       display: block;
       font-size: 1.25em;
     }
-    
+
     div.kitchens figure img { background: #efefef url('/images/photos/gallery_kitchens.jpg') no-repeat scroll center top; }
     div.baths figure img { background: #efefef url('/images/photos/gallery_baths.jpg') no-repeat scroll -20px top; }
     div.exteriors figure img { background: #efefef url('/images/photos/gallery_exteriors.jpg') no-repeat scroll -310px -240px; }
@@ -326,7 +329,7 @@ body.gallery {
       margin: 0 0 0.5em 0;
     }
   }
-  
+
   header.gallery h1 {
     display: block;
     margin-bottom: 0.5em;
@@ -338,13 +341,13 @@ body.about {
     article {
       margin-bottom: 2.0em;
       padding-right: 2%;
-      
+
       figure {
         float: right;
         max-width: 33%;
         margin: 0.5em 0 1.0em 1.0em;
       }
-      
+
       h3 { margin: 0; }
 
       h4 {
@@ -380,7 +383,7 @@ body.process {
        -moz-box-shadow: none;
             box-shadow: none;
   }
-  
+
   section {
     p { font-size: 1.125em; }
     h3 { margin: 0; }
@@ -388,10 +391,10 @@ body.process {
   }
 }
 
-body.resources {  
+body.resources {
   section {
     h3 { color: #366; }
-    
+
     ul {
       margin-top: 0;
       font-size: 1.125em;
@@ -421,7 +424,7 @@ body.contact {
          -moz-border-radius: 2px;
               border-radius: 2px;
     }
-    
+
     input[type=submit] {
       margin: 1.0em 0 2.0em 0;
       background-color: rgba(51,102,102,0.8);
@@ -440,40 +443,40 @@ body.contact {
          -moz-border-radius: 3px;
               border-radius: 3px;
     }
-    
+
     select {
       font-size: larger;
     }
-    
+
     p {
       font-family: "Merriweather", serif;
       line-height: 2.0em;
       padding-bottom: 1.0em;
-      
+
       > span {
         color: #930;
       }
     }
-    
+
     aside {
       padding: 20px 30px;
       background-color: rgba(0,0,0,0.1);
       -webkit-border-radius: 6px;
          -moz-border-radius: 6px;
               border-radius: 6px;
-              
+
       p {
         line-height: 1.66em;
       }
-      
+
       a {
         color: inherit;
       }
     }
-    
+
     div#log {
       display: none;
-      
+
       > div {
         margin-bottom: 1.5em;
         padding: 0.825em 1.5em;
@@ -490,6 +493,9 @@ body.contact {
       }
     }
   }
+
+  /* Hide Facebook link in footer on Contact */
+  footer > p {display:none;}
 }
 
 /* Responsive slideshow */
@@ -500,13 +506,13 @@ body.contact {
   width: 100%;
   padding: 0;
   margin: 0;
-  
+
   li {
     position: absolute;
     width: 100%;
     left: 0;
     top: 0;
-    
+
     img {
       display: block;
       height: auto;
@@ -514,7 +520,7 @@ body.contact {
       width: 100%;
       border: 0;
     }
-    
+
     figcaption {
       position: absolute;
       bottom: 1.25em;
@@ -539,15 +545,15 @@ body.contact {
   width: 38px;
   background: transparent url("/images/rslides_arrows.gif") no-repeat left top;
   margin-top: -45px;
-  
+
   &:active {
     opacity: 1.0;
   }
-  
+
   &:focus {
     outline: none;
   }
-  
+
   &.next {
     left: auto;
     background-position: right top;
@@ -565,7 +571,7 @@ body.contact {
     _float: left;
     *float: left;
     margin-right: 5px;
-  
+
     a {
       text-indent: -9999px;
       overflow: hidden;
@@ -583,7 +589,7 @@ body.contact {
       width: 0.5625em;
       height: 0.5625em;
     }
-  
+
     &.rslides_here a {
       background: #222;
       background: rgba(0,0,0, .8);
@@ -599,12 +605,12 @@ body.contact {
   body {
     font-size: 14px;
   }
-  
+
   div.wrapper {
     margin-left: 0;
   }
-  
-  body.resources {  
+
+  body.resources {
     section {
       ul {
         padding-left: 1.33em;
@@ -616,10 +622,10 @@ body.contact {
 /* Portrait tablets */
 @media handheld, only screen and (max-width: 860px) {
   body.home {
-    aside {      
+    aside {
       h4 {font-size:0.9em;}
     }
-    
+
     li[data-behavior~=tablet-hide] {display:none;}
   }
 }
@@ -631,29 +637,29 @@ body.contact {
 	  font-size: 14px;
 	  -webkit-text-size-adjust: none;
 	}
-	
+
 	body.home {
     aside {
       padding: 1.0em 1.0em 0;
-      
+
       h4 {margin:0;}
     }
-    
+
     li[data-behavior~=tablet-hide] {display:list-item;}
   }
-  
+
   body.testimonials {
     div.grid_2 { text-align: center; }
-    
+
     figure {
       margin-bottom: 1.25em;
       display: inline-block;
     }
   }
-  
+
   body.process {
     div.grid_1 {min-width:3.0em}
-    
+
     figure {
       height: 1.625em;
       width: 1.625em;;
@@ -661,25 +667,25 @@ body.contact {
       line-height: 1.625em;
     }
   }
-  
+
   body.contact {
     div.alpha,
     div.omega {
       margin: 0;
     }
-    
+
     div.grid_6,
     div.grid_4 {
       width: 98% !important;
     }
-    
+
     form {
       input[type=submit] {
         width: 100%;
       }
     }
   }
-  
+
   div.gallery_index {
     figure img { height: 100px; width: 100%; }
 
@@ -690,47 +696,47 @@ body.contact {
       margin: 0 0 0.5em 0;
     }
   }
-  
+
   div.mobile_contact {
     margin: 0.5em 0;
     text-align: center;
   }
-  
+
   div.mobile_nav {
     width: 100%;
     margin: 0 auto;
     padding: 1.0em 0 0 0;
-    
+
     select {
       width: 100%;
       font-size: smaller;
     }
   }
-	
+
 	div[data-behavior~=mobile-show] {display: block;}
 	[data-behavior~=mobile-hide] {display: none;}
-	
-	figure {	  
+
+	figure {
     &.slideshow {
       padding: 0.825em;
     }
   }
-  
+
   footer li {
     display: block;
   }
-  
+
   div.clear.padded {
     padding: 0.5em 0;
   }
-	
+
 	div.masthead {
     background: none;
     padding-bottom: 0;
-    
+
     table {
       width: 100%;
-      
+
       td {
         div.logo {
           width: 30%;
@@ -763,7 +769,7 @@ body.contact {
       }
     }
   }
-	
+
 	body {
 	  &:not(.process) {
 	    .grid_1,

@@ -106,8 +106,7 @@ aside {
 div.clear.padded {
   padding: 1.25em 0; }
 
-div.content,
-footer > div.inner {
+div.content {
   max-width: 1040px; }
 
 div.content {
@@ -125,11 +124,13 @@ footer {
   text-align: center; }
   footer ul {
     list-style: none;
-    margin: 0 0 0 -0.5em;
+    margin: 0 0 2em -0.5em;
     padding: 0; }
   footer li {
     display: inline-block;
     margin: 0 0.5em; }
+  footer p a {
+    display: inline-block; }
 
 img {
   max-width: 100%;
@@ -299,69 +300,73 @@ body.resources section ul {
   line-height: 1.5em;
   color: #333; }
 
-body.contact form input[type=text],
-body.contact form textarea,
-body.contact form select {
-  width: 100%; }
-body.contact form input[type=text],
-body.contact form textarea {
-  font-family: 'ProximaNova', sans-serif;
-  font-size: 1.0em;
-  box-sizing: border-box;
-  border-style: none;
-  border: 1px solid #ccc;
-  padding: 0.5em;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 2px; }
-body.contact form input[type=submit] {
-  margin: 1.0em 0 2.0em 0;
-  background-color: rgba(51, 102, 102, 0.8);
-  color: white;
-  border: 1px solid #366;
-  font-size: 1.125em;
-  padding: 0.667em 2.0em;
-  font-family: 'ProximaNova', sans-serif;
-  font-weight: bold;
-  vertical-align: baseline;
-  -webkit-appearance: none;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px; }
-body.contact form select {
-  font-size: larger; }
-body.contact form p {
-  font-family: "Merriweather", serif;
-  line-height: 2.0em;
-  padding-bottom: 1.0em; }
-  body.contact form p > span {
-    color: #930; }
-body.contact form aside {
-  padding: 20px 30px;
-  background-color: rgba(0, 0, 0, 0.1);
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  border-radius: 6px; }
-  body.contact form aside p {
-    line-height: 1.66em; }
-  body.contact form aside a {
-    color: inherit; }
-body.contact form div#log {
-  display: none; }
-  body.contact form div#log > div {
-    margin-bottom: 1.5em;
-    padding: 0.825em 1.5em;
-    border: 2px solid #cc8f52;
-    background-color: rgba(204, 102, 0, 0.33);
+body.contact {
+  /* Hide Facebook link in footer on Contact */ }
+  body.contact form input[type=text],
+  body.contact form textarea,
+  body.contact form select {
+    width: 100%; }
+  body.contact form input[type=text],
+  body.contact form textarea {
+    font-family: 'ProximaNova', sans-serif;
+    font-size: 1.0em;
+    box-sizing: border-box;
+    border-style: none;
+    border: 1px solid #ccc;
+    padding: 0.5em;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px; }
+  body.contact form input[type=submit] {
+    margin: 1.0em 0 2.0em 0;
+    background-color: rgba(51, 102, 102, 0.8);
+    color: white;
+    border: 1px solid #366;
+    font-size: 1.125em;
+    padding: 0.667em 2.0em;
+    font-family: 'ProximaNova', sans-serif;
+    font-weight: bold;
+    vertical-align: baseline;
+    -webkit-appearance: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px; }
-    body.contact form div#log > div.success {
-      background-color: rgba(90, 150, 150, 0.33);
-      border: 2px solid #5a9696; }
+  body.contact form select {
+    font-size: larger; }
+  body.contact form p {
+    font-family: "Merriweather", serif;
+    line-height: 2.0em;
+    padding-bottom: 1.0em; }
+    body.contact form p > span {
+      color: #930; }
+  body.contact form aside {
+    padding: 20px 30px;
+    background-color: rgba(0, 0, 0, 0.1);
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px; }
+    body.contact form aside p {
+      line-height: 1.66em; }
+    body.contact form aside a {
+      color: inherit; }
+  body.contact form div#log {
+    display: none; }
+    body.contact form div#log > div {
+      margin-bottom: 1.5em;
+      padding: 0.825em 1.5em;
+      border: 2px solid #cc8f52;
+      background-color: rgba(204, 102, 0, 0.33);
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px; }
+      body.contact form div#log > div.success {
+        background-color: rgba(90, 150, 150, 0.33);
+        border: 2px solid #5a9696; }
+  body.contact footer > p {
+    display: none; }
 
 /* Responsive slideshow */
 .rslides {
