@@ -37,8 +37,8 @@ $comments = $_POST["comments"];
 $referral = $_POST["referral"];
 
 // defaults
-$mailTo		= 'uptonic@gmail.com';
-$nameTo		= 'Scott Upton';
+$mailTo		= 'donna@bw-construction.com';
+$nameTo		= 'Donna Werner';
 $subject	= 'BW Construction Inquiry - '.$name;
 
 
@@ -49,7 +49,7 @@ $subject	= 'BW Construction Inquiry - '.$name;
 $notice = false;
 
 // Validate email addresses
-function validateEmail($email = NULL) {		
+function validateEmail($email = NULL) {
 	if (eregi("^([_a-z0-9-]+)(\.[_a-z0-9-]+)*@([a-z0-9-]+)(\.[a-z0-9-]+)*(\.[a-z]{2,4})$", $email) == false) return false;
 	return true;
 }
@@ -64,7 +64,7 @@ if (empty($name)||empty($email)||empty($phone)) {
 }
 
 // If email address, validate it
-if ($email) {		
+if ($email) {
 	// Check for valid email format
 	if (validateEmail($email) == false) {
 		$notice = true;
@@ -109,7 +109,7 @@ If you have any questions, please contact Donna Werner via email at donna@bw-con
 
 	// send mail
 	$s = $m->Send();
-	
+
 	// if mail was sent, confirm success to user, else throw error
 	if($s) {
 		echo '<div class="success"><strong>Thank you for your email!</strong> Please check your inbox for a message confirming it. We look forward to working with you!</div>';
@@ -118,6 +118,6 @@ If you have any questions, please contact Donna Werner via email at donna@bw-con
 	}
 }
 
-// 
+//
 
 ?>
