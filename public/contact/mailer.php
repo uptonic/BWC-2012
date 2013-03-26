@@ -37,7 +37,7 @@ $comments = $_POST["comments"];
 $referral = $_POST["referral"];
 
 // defaults
-$mailTo		= 'donna@bw-construction.com';
+$mailTo		= 'donnalee1229@gmail.com';
 $nameTo		= 'Donna Werner';
 $subject	= 'BW Construction Inquiry - '.$name;
 
